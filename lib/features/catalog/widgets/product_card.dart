@@ -27,13 +27,16 @@ class ProductCard extends StatelessWidget {
                 width: double.infinity,
                 padding: const EdgeInsets.all(16),
                 child: Center(
-                  child: Image.network(
-                    product.imageUrl,
-                    fit: BoxFit.contain,
-                    errorBuilder: (context, error, stackTrace) => const Icon(
-                      Icons.image_not_supported_outlined,
-                      color: AppColors.neutralGray,
-                      size: 40,
+                  child: Hero(
+                    tag: 'product_image_${product.id}',
+                    child: Image.network(
+                      product.imageUrl,
+                      fit: BoxFit.contain,
+                      errorBuilder: (context, error, stackTrace) => const Icon(
+                        Icons.image_not_supported_outlined,
+                        color: AppColors.neutralGray,
+                        size: 40,
+                      ),
                     ),
                   ),
                 ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myson/core/constants/app_design_tokens.dart';
 import 'package:myson/features/catalog/models/product_service.dart';
+import 'package:myson/features/catalog/view/product_detail_screen.dart';
 import 'package:myson/features/catalog/widgets/product_card.dart';
 
 class CatalogScreen extends StatelessWidget {
@@ -75,10 +76,17 @@ class CatalogScreen extends StatelessWidget {
                 childAspectRatio: 0.70,
               ),
               delegate: SliverChildBuilderDelegate((context, index) {
+                final product = products[index];
                 return ProductCard(
-                  product: products[index],
+                  product: product,
                   onTap: () {
-                    debugPrint('Selected: ${products[index].name}');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            ProductDetailScreen(product: product),
+                      ),
+                    );
                   },
                 );
               }, childCount: products.length),
