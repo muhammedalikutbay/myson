@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:myson/core/constants/app_design_tokens.dart';
-import 'package:myson/features/catalog/models/product.dart';
+import 'package:myson/data/models/product.dart';
 
 class ProductCard extends StatelessWidget {
   final Product product;
-  final VoidCallback? onTap;
+  final VoidCallback onTap;
 
-  const ProductCard({super.key, required this.product, this.onTap});
+  const ProductCard({super.key, required this.product, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -14,43 +14,43 @@ class ProductCard extends StatelessWidget {
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
-          color: AppColors.secondaryBackground,
+          color: Colors.white,
           borderRadius: BorderRadius.circular(20),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withAlpha((0.05 * 255).round()),
+              blurRadius: 10,
+              offset: const Offset(0, 4),
+            ),
+          ],
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Product Image Area
+            // Image Section
             Expanded(
               flex: 3,
-              child: Container(
-                width: double.infinity,
-                padding: const EdgeInsets.all(16),
-                child: Center(
-                  child: Hero(
-                    tag: 'product_image_${product.id}',
-                    child: Image.network(
-                      product.imageUrl,
-                      fit: BoxFit.contain,
-                      errorBuilder: (context, error, stackTrace) => const Icon(
-                        Icons.image_not_supported_outlined,
-                        color: AppColors.neutralGray,
-                        size: 40,
-                      ),
+              child: Hero(
+                tag: 'product_image_${product.id}',
+                child: Container(
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: AppColors.secondaryBackground,
+                    borderRadius: const BorderRadius.vertical(
+                      top: Radius.circular(20),
                     ),
+                  ),
+                  child: Center(
+                    child: Image.network(product.imageUrl, fit: BoxFit.contain),
                   ),
                 ),
               ),
             ),
-
-            // Product Info Area
+            // Details Section
             Expanded(
               flex: 2,
               child: Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 8,
-                ),
+                padding: const EdgeInsets.all(12.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -59,19 +59,17 @@ class ProductCard extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          product.category.toUpperCase(),
+                          product.category,
                           style: AppTypography.footnote.copyWith(
-                            fontSize: 10,
-                            letterSpacing: 1.0,
-                            fontWeight: FontWeight.bold,
+                            color: AppColors.secondaryLabel,
                           ),
                         ),
                         const SizedBox(height: 4),
                         Text(
                           product.name,
-                          style: AppTypography.headline.copyWith(fontSize: 15),
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
+                          style: AppTypography.headline.copyWith(fontSize: 16),
                         ),
                       ],
                     ),
@@ -79,15 +77,16 @@ class ProductCard extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          '\$${product.price.toStringAsFixed(2)}',
-                          style: AppTypography.bodyLarge.copyWith(
-                            fontWeight: FontWeight.w600,
+                          '\$${product.price}',
+                          style: AppTypography.bodySmall.copyWith(
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.primaryBlue,
                           ),
                         ),
                         const Icon(
                           Icons.add_circle,
                           color: Colors.black,
-                          size: 28,
+                          size: 24,
                         ),
                       ],
                     ),

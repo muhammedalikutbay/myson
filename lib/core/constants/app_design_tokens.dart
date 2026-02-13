@@ -15,10 +15,10 @@ class AppColors {
   // Text Colors
   static const Color label = Color(0xFF000000);
   static const Color secondaryLabel = Color(0x993C3C43); // 60% opacity
-  static const Color tertiaryLabel = Color(0x4D3C3C43);  // 30% opacity
-  
+  static const Color tertiaryLabel = Color(0x4D3C3C43); // 30% opacity
+
   // Separator
-  static const Color separator = Color(0x4A3C3C43);      // 29% opacity
+  static const Color separator = Color(0x4A3C3C43); // 29% opacity
 }
 
 class AppTypography {
@@ -50,6 +50,13 @@ class AppTypography {
     fontSize: 13,
     fontWeight: FontWeight.normal,
     letterSpacing: -0.08,
+    color: AppColors.secondaryLabel,
+  );
+
+  static const TextStyle bodySmall = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.normal,
+    letterSpacing: 0,
     color: AppColors.secondaryLabel,
   );
 }

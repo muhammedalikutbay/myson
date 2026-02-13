@@ -1,4 +1,4 @@
-import 'package:myson/features/catalog/models/product.dart';
+import 'package:myson/data/models/product.dart';
 
 class ProductService {
   static final List<Map<String, dynamic>> _rawData = [

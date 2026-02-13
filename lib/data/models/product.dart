@@ -15,19 +15,6 @@ class Product {
     required this.category,
   });
 
-  // Convert a Product object into a Map
-  Map<String, dynamic> toMap() {
-    return {
-      'id': id,
-      'name': name,
-      'description': description,
-      'price': price,
-      'imageUrl': imageUrl,
-      'category': category,
-    };
-  }
-
-  // Create a Product object from a Map (JSON simulation)
   factory Product.fromMap(Map<String, dynamic> map) {
     return Product(
       id: map['id'] ?? '',

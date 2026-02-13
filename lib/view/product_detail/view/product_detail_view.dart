@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:myson/core/constants/app_design_tokens.dart';
 import 'package:myson/core/state/cart_service.dart';
-import 'package:myson/features/catalog/models/product.dart';
+import 'package:myson/data/models/product.dart';
+import 'package:myson/core/init/locator.dart';
 
-class ProductDetailScreen extends StatelessWidget {
+class ProductDetailView extends StatelessWidget {
   final Product product;
 
-  const ProductDetailScreen({super.key, required this.product});
+  const ProductDetailView({super.key, required this.product});
 
   @override
   Widget build(BuildContext context) {
+    final cartService = locator<CartService>();
+
     return Scaffold(
       backgroundColor: AppColors.background,
       body: CustomScrollView(
@@ -103,7 +106,7 @@ class ProductDetailScreen extends StatelessWidget {
       bottomSheet: Container(
         padding: const EdgeInsets.all(24),
         decoration: BoxDecoration(
-          color: AppColors.background.withOpacity(0.8),
+          color: AppColors.background.withAlpha((0.8 * 255).round()),
           border: const Border(
             top: BorderSide(color: AppColors.separator, width: 0.5),
           ),
@@ -114,7 +117,7 @@ class ProductDetailScreen extends StatelessWidget {
               Expanded(
                 child: ElevatedButton(
                   onPressed: () {
-                    CartService().addToCart();
+                    cartService.addToCart();
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         content: Text('${product.name} added to bag'),
