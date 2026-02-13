@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:myson/core/constants/app_design_tokens.dart';
 import 'package:myson/core/init/locator.dart';
 import 'package:myson/core/state/cart_service.dart';
-import 'package:myson/core/components/app_search_field.dart';
 import 'package:myson/view/catalog/viewmodel/catalog_viewmodel.dart';
 import 'package:myson/view/product_detail/view/product_detail_view.dart';
 import 'package:myson/view/catalog/widgets/product_card.dart';
@@ -36,20 +35,14 @@ class _CatalogViewContent extends StatelessWidget {
       backgroundColor: AppColors.background,
       body: CustomScrollView(
         slivers: [
-          CatalogAppBar(title: 'Myson', cartService: cartService),
+          CatalogAppBar(
+            title: 'Myson',
+            cartService: cartService,
+            onSearchChanged: viewModel.updateSearchQuery,
+          ),
           SliverToBoxAdapter(
             child: Column(
               children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 16,
-                    vertical: 8,
-                  ),
-                  child: AppSearchField(
-                    onChanged: viewModel.updateSearchQuery,
-                    hintText: 'Search products...',
-                  ),
-                ),
                 const CatalogHeroBanner(),
                 CategoryTabs(
                   categories: viewModel.categories,

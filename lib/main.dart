@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:myson/core/init/locator.dart';
 import 'package:myson/core/theme/app_theme.dart';
-import 'package:myson/view/catalog/view/catalog_view.dart';
+import 'package:myson/view/main/view/main_view.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   setupLocator();
-  runApp(const MysonApp());
+  runApp(const MyApp());
 }
 
-class MysonApp extends StatelessWidget {
-  const MysonApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Myson',
       debugShowCheckedModeBanner: false,
+      title: 'Myson',
       theme: AppTheme.lightTheme,
-      home: const CatalogView(),
+      home: const MainView(),
     );
   }
 }

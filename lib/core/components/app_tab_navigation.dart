@@ -49,45 +49,54 @@ class _AppTabNavigationState extends State<AppTabNavigation>
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      decoration: const BoxDecoration(
-        color: AppColors.background,
-        border: Border(
-          bottom: BorderSide(color: AppColors.separator, width: 0.5),
-        ),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          TabBar(
+      color: AppColors.background,
+      padding: const EdgeInsets.symmetric(vertical: 16),
+      child: Center(
+        child: Container(
+          height: 50,
+          margin: const EdgeInsets.symmetric(horizontal: 16),
+          padding: const EdgeInsets.all(4),
+          decoration: BoxDecoration(
+            color: AppColors.secondaryBackground.withAlpha((0.5 * 255).round()),
+            borderRadius: BorderRadius.circular(25),
+          ),
+          child: TabBar(
             controller: _tabController,
             isScrollable: true,
             tabAlignment: TabAlignment.start,
             onTap: widget.onTabSelected,
-            indicatorColor: Colors.black,
-            indicatorWeight: 2,
-            indicatorSize: TabBarIndicatorSize.label,
-            dividerColor: Colors.transparent,
-            labelColor: Colors.black,
-            unselectedLabelColor: AppColors.secondaryLabel,
-            labelStyle: AppTypography.headline.copyWith(fontSize: 14),
+            indicatorSize: TabBarIndicatorSize.tab,
+            indicator: BoxDecoration(
+              color: const Color(0xFF1D1D1F), // Darker Apple-style black
+              borderRadius: BorderRadius.circular(21),
+            ),
+            labelColor: Colors.white,
+            unselectedLabelColor: const Color(
+              0xFF424245,
+            ), // Apple secondary text
+            labelStyle: AppTypography.headline.copyWith(
+              fontSize: 14,
+              fontWeight: FontWeight.w500,
+            ),
             unselectedLabelStyle: AppTypography.headline.copyWith(
               fontSize: 14,
               fontWeight: FontWeight.normal,
             ),
+            dividerColor: Colors.transparent,
             splashFactory: NoSplash.splashFactory,
             overlayColor: WidgetStateProperty.all(Colors.transparent),
             tabs: widget.items
                 .map(
                   (item) => Tab(
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: Text(item),
                     ),
                   ),
                 )
                 .toList(),
           ),
-        ],
+        ),
       ),
     );
   }
