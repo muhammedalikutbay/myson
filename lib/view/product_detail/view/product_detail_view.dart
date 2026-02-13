@@ -3,6 +3,8 @@ import 'package:myson/core/constants/app_design_tokens.dart';
 import 'package:myson/core/state/cart_service.dart';
 import 'package:myson/data/models/product.dart';
 import 'package:myson/core/init/locator.dart';
+import 'package:myson/core/components/app_button.dart';
+import 'package:myson/core/components/app_list_tile.dart';
 
 class ProductDetailView extends StatelessWidget {
   final Product product;
@@ -90,9 +92,16 @@ class ProductDetailView extends StatelessWidget {
                   const SizedBox(height: 40),
 
                   // Specifications Section Simulation
-                  _buildSpecRow('Weight', 'Varies by model'),
-                  _buildSpecRow('Suction Power', 'Intelligent suction'),
-                  _buildSpecRow('Filtration', 'Whole-machine filtration'),
+                  AppListTile(label: 'Weight', value: 'Varies by model'),
+                  AppListTile(
+                    label: 'Suction Power',
+                    value: 'Intelligent suction',
+                  ),
+                  AppListTile(
+                    label: 'Filtration',
+                    value: 'Whole-machine filtration',
+                    showDivider: false,
+                  ),
 
                   const SizedBox(height: 120), // Padding for sticky button
                 ],
@@ -115,7 +124,8 @@ class ProductDetailView extends StatelessWidget {
           child: Row(
             children: [
               Expanded(
-                child: ElevatedButton(
+                child: AppButton(
+                  label: 'Add to Bag',
                   onPressed: () {
                     cartService.addToCart();
                     ScaffoldMessenger.of(context).showSnackBar(
@@ -130,35 +140,11 @@ class ProductDetailView extends StatelessWidget {
                       ),
                     );
                   },
-                  child: const Text('Add to Bag'),
                 ),
               ),
             ],
           ),
         ),
-      ),
-    );
-  }
-
-  Widget _buildSpecRow(String label, String value) {
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 16),
-      decoration: const BoxDecoration(
-        border: Border(
-          bottom: BorderSide(color: AppColors.separator, width: 0.5),
-        ),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(label, style: AppTypography.bodyLarge),
-          Text(
-            value,
-            style: AppTypography.bodyLarge.copyWith(
-              color: AppColors.secondaryLabel,
-            ),
-          ),
-        ],
       ),
     );
   }
