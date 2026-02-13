@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myson/core/constants/app_design_tokens.dart';
+import 'package:myson/core/state/cart_service.dart';
 import 'package:myson/features/catalog/models/product.dart';
 
 class ProductDetailScreen extends StatelessWidget {
@@ -112,7 +113,20 @@ class ProductDetailScreen extends StatelessWidget {
             children: [
               Expanded(
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    CartService().addToCart();
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text('${product.name} added to bag'),
+                        behavior: SnackBarBehavior.floating,
+                        backgroundColor: Colors.black,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        duration: const Duration(seconds: 2),
+                      ),
+                    );
+                  },
                   child: const Text('Add to Bag'),
                 ),
               ),

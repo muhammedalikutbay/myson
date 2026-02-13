@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myson/core/constants/app_design_tokens.dart';
+import 'package:myson/core/state/cart_service.dart';
 import 'package:myson/features/catalog/models/product_service.dart';
 import 'package:myson/features/catalog/view/product_detail_screen.dart';
 import 'package:myson/features/catalog/widgets/product_card.dart';
@@ -10,6 +11,7 @@ class CatalogScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final products = ProductService.getMockProducts();
+    final cartService = CartService();
 
     return Scaffold(
       backgroundColor: AppColors.background,
@@ -34,12 +36,47 @@ class CatalogScreen extends StatelessWidget {
               ),
             ),
             actions: [
-              IconButton(
-                icon: const Icon(
-                  Icons.shopping_bag_outlined,
-                  color: Colors.black,
-                ),
-                onPressed: () {},
+              ValueListenableBuilder<int>(
+                valueListenable: cartService.cartCount,
+                builder: (context, count, child) {
+                  return Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      IconButton(
+                        icon: const Icon(
+                          Icons.shopping_bag_outlined,
+                          color: Colors.black,
+                        ),
+                        onPressed: () {},
+                      ),
+                      if (count > 0)
+                        Positioned(
+                          right: 8,
+                          top: 8,
+                          child: Container(
+                            padding: const EdgeInsets.all(4),
+                            decoration: const BoxDecoration(
+                              color: AppColors.primaryBlue,
+                              shape: BoxShape.circle,
+                            ),
+                            constraints: const BoxConstraints(
+                              minWidth: 16,
+                              minHeight: 16,
+                            ),
+                            child: Text(
+                              '$count',
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ),
+                    ],
+                  );
+                },
               ),
               const SizedBox(width: 8),
             ],
