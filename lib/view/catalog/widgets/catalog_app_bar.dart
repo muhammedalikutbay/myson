@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myson/core/constants/app_design_tokens.dart';
+import 'package:myson/view/catalog/widgets/catalog_info_dialog.dart';
 
 class CatalogAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
@@ -26,7 +27,7 @@ class CatalogAppBar extends StatelessWidget implements PreferredSizeWidget {
           onPressed:
               onInfoPressed ??
               () {
-                // Portfolio info logic
+                CatalogInfoDialog.show(context);
               },
         ),
         const SizedBox(width: 8),

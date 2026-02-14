@@ -12,11 +12,10 @@ class MainViewModel extends ChangeNotifier {
 
   void setIndex(int index) {
     if (_currentIndex == index) {
-      // If tapping the same tab, pop to the root of that tab
-      navigatorKeys[index]?.currentState?.popUntil((route) => route.isFirst);
       return;
     }
     _currentIndex = index;
+    debugPrint('Navigation changed to index: $index');
     notifyListeners();
   }
 

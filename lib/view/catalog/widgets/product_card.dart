@@ -103,7 +103,7 @@ class ProductCard extends StatelessWidget {
                               child: InkWell(
                                 borderRadius: BorderRadius.circular(20),
                                 onTap: () {
-                                  cartService.addToCart();
+                                  cartService.addToCart(product);
                                   AppToast.show(context, 'Added to Bag');
                                 },
                                 child: const Padding(

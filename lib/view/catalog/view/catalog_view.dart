@@ -47,8 +47,43 @@ class _CatalogViewContent extends StatelessWidget {
             ),
           ),
           _buildProductGrid(viewModel),
+          if (viewModel.totalPages > 1)
+            SliverToBoxAdapter(child: _buildPagination(viewModel)),
           const SliverToBoxAdapter(child: SizedBox(height: 100)),
         ],
+      ),
+    );
+  }
+
+  Widget _buildPagination(CatalogViewModel viewModel) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 24.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: List.generate(viewModel.totalPages, (index) {
+          final page = index + 1;
+          final isSelected = viewModel.currentPage == page;
+          return GestureDetector(
+            onTap: () => viewModel.setPage(page),
+            child: Container(
+              margin: const EdgeInsets.symmetric(horizontal: 4),
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+              decoration: BoxDecoration(
+                color: isSelected
+                    ? Colors.black
+                    : AppColors.secondaryBackground,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Text(
+                '$page',
+                style: TextStyle(
+                  color: isSelected ? Colors.white : Colors.black,
+                  fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                ),
+              ),
+            ),
+          );
+        }),
       ),
     );
   }

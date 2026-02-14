@@ -111,8 +111,8 @@ class ProductDetailView extends StatelessWidget {
                     label: 'Add to Bag',
                     backgroundColor: AppColors.primaryBlue,
                     onPressed: () {
-                      cartService.addToCart();
-                      AppToast.show(context, 'Sepete Eklendi');
+                      cartService.addToCart(product);
+                      AppToast.show(context, 'Added to Bag');
                     },
                   ),
 

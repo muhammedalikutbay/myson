@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myson/core/constants/app_design_tokens.dart';
+import 'package:myson/core/components/app_toast.dart';
 
 class ProfileView extends StatelessWidget {
   const ProfileView({super.key});
@@ -64,34 +65,34 @@ class ProfileView extends StatelessWidget {
                   _ProfileMenuItem(
                     icon: Icons.shopping_bag_outlined,
                     title: 'My Orders',
-                    onTap: () {},
+                    onTap: () => AppToast.show(context, 'Under Development'),
                   ),
                   _ProfileMenuItem(
                     icon: Icons.location_on_outlined,
                     title: 'Addresses',
-                    onTap: () {},
+                    onTap: () => AppToast.show(context, 'Under Development'),
                   ),
                   _ProfileMenuItem(
                     icon: Icons.payment_outlined,
                     title: 'Payment Methods',
-                    onTap: () {},
+                    onTap: () => AppToast.show(context, 'Under Development'),
                   ),
                   const Divider(height: 32, color: AppColors.separator),
                   _ProfileMenuItem(
                     icon: Icons.settings_outlined,
                     title: 'Settings',
-                    onTap: () {},
+                    onTap: () => AppToast.show(context, 'Under Development'),
                   ),
                   _ProfileMenuItem(
                     icon: Icons.help_outline,
                     title: 'Help Center',
-                    onTap: () {},
+                    onTap: () => AppToast.show(context, 'Under Development'),
                   ),
                   _ProfileMenuItem(
                     icon: Icons.logout,
                     title: 'Log out',
                     textColor: AppColors.danger,
-                    onTap: () {},
+                    onTap: () => AppToast.show(context, 'Under Development'),
                   ),
                   const SizedBox(height: 120), // Bottom padding
                 ],
