@@ -4,6 +4,7 @@ import 'package:myson/core/state/cart_service.dart';
 import 'package:myson/data/models/product.dart';
 import 'package:myson/core/init/locator.dart';
 import 'package:myson/core/components/app_button.dart';
+import 'package:myson/core/components/app_toast.dart';
 import 'package:myson/core/components/app_list_tile.dart';
 
 class ProductDetailView extends StatelessWidget {
@@ -108,19 +109,10 @@ class ProductDetailView extends StatelessWidget {
                   // Add to Bag Button (Now part of the scrollable list)
                   AppButton(
                     label: 'Add to Bag',
+                    backgroundColor: AppColors.primaryBlue,
                     onPressed: () {
                       cartService.addToCart();
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text('${product.name} added to bag'),
-                          behavior: SnackBarBehavior.floating,
-                          backgroundColor: Colors.black,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          duration: const Duration(seconds: 2),
-                        ),
-                      );
+                      AppToast.show(context, 'Sepete Eklendi');
                     },
                   ),
 
