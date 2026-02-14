@@ -103,48 +103,35 @@ class ProductDetailView extends StatelessWidget {
                     showDivider: false,
                   ),
 
-                  const SizedBox(height: 120), // Padding for sticky button
+                  const SizedBox(height: 40),
+
+                  // Add to Bag Button (Now part of the scrollable list)
+                  AppButton(
+                    label: 'Add to Bag',
+                    onPressed: () {
+                      cartService.addToCart();
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('${product.name} added to bag'),
+                          behavior: SnackBarBehavior.floating,
+                          backgroundColor: Colors.black,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          duration: const Duration(seconds: 2),
+                        ),
+                      );
+                    },
+                  ),
+
+                  const SizedBox(
+                    height: 100,
+                  ), // Bottom padding to prevent overlap with glassmorphic bar
                 ],
               ),
             ),
           ),
         ],
-      ),
-
-      // Bottom Action Bar
-      bottomSheet: Container(
-        padding: const EdgeInsets.all(24),
-        decoration: BoxDecoration(
-          color: AppColors.background.withAlpha((0.8 * 255).round()),
-          border: const Border(
-            top: BorderSide(color: AppColors.separator, width: 0.5),
-          ),
-        ),
-        child: SafeArea(
-          child: Row(
-            children: [
-              Expanded(
-                child: AppButton(
-                  label: 'Add to Bag',
-                  onPressed: () {
-                    cartService.addToCart();
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text('${product.name} added to bag'),
-                        behavior: SnackBarBehavior.floating,
-                        backgroundColor: Colors.black,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        duration: const Duration(seconds: 2),
-                      ),
-                    );
-                  },
-                ),
-              ),
-            ],
-          ),
-        ),
       ),
     );
   }
