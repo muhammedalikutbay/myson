@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
 class MainViewModel extends ChangeNotifier {
-  int _currentIndex = 2; // Home is default
+  int _currentIndex = 0; // Home is default
   int get currentIndex => _currentIndex;
 
   final Map<int, GlobalKey<NavigatorState>> navigatorKeys = {
     0: GlobalKey<NavigatorState>(),
     1: GlobalKey<NavigatorState>(),
     2: GlobalKey<NavigatorState>(),
-    3: GlobalKey<NavigatorState>(),
-    4: GlobalKey<NavigatorState>(),
   };
 
   void setIndex(int index) {

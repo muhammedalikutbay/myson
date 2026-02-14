@@ -6,8 +6,6 @@ import 'package:myson/core/init/locator.dart';
 import 'package:myson/core/state/cart_service.dart';
 import 'package:myson/view/main/viewmodel/main_viewmodel.dart';
 import 'package:myson/view/catalog/view/catalog_view.dart';
-import 'package:myson/view/discovery/view/discovery_view.dart';
-import 'package:myson/view/search/view/search_view.dart';
 import 'package:myson/view/bag/view/bag_view.dart';
 import 'package:myson/view/profile/view/profile_view.dart';
 
@@ -49,22 +47,14 @@ class _MainViewContent extends StatelessWidget {
             children: [
               _TabNavigator(
                 navigatorKey: viewModel.navigatorKeys[0]!,
-                rootPath: const DiscoveryView(),
-              ),
-              _TabNavigator(
-                navigatorKey: viewModel.navigatorKeys[1]!,
-                rootPath: const SearchView(),
-              ),
-              _TabNavigator(
-                navigatorKey: viewModel.navigatorKeys[2]!,
                 rootPath: const CatalogView(),
               ),
               _TabNavigator(
-                navigatorKey: viewModel.navigatorKeys[3]!,
+                navigatorKey: viewModel.navigatorKeys[1]!,
                 rootPath: const BagView(),
               ),
               _TabNavigator(
-                navigatorKey: viewModel.navigatorKeys[4]!,
+                navigatorKey: viewModel.navigatorKeys[2]!,
                 rootPath: const ProfileView(),
               ),
             ],
@@ -132,16 +122,6 @@ class _AppBottomNavigationBar extends StatelessWidget {
             ),
             unselectedLabelStyle: AppTypography.footnote,
             items: [
-              const BottomNavigationBarItem(
-                icon: Icon(Icons.confirmation_number_outlined),
-                activeIcon: Icon(Icons.confirmation_number),
-                label: 'Deals',
-              ),
-              const BottomNavigationBarItem(
-                icon: Icon(Icons.search_outlined),
-                activeIcon: Icon(Icons.search),
-                label: 'Search',
-              ),
               const BottomNavigationBarItem(
                 icon: Icon(Icons.home_outlined),
                 activeIcon: Icon(Icons.home),
