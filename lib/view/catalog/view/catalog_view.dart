@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:myson/core/constants/app_design_tokens.dart';
 import 'package:myson/core/init/locator.dart';
-import 'package:myson/core/state/cart_service.dart';
 import 'package:myson/view/catalog/viewmodel/catalog_viewmodel.dart';
 import 'package:myson/view/product_detail/view/product_detail_view.dart';
 import 'package:myson/view/catalog/widgets/product_card.dart';
@@ -29,17 +28,12 @@ class _CatalogViewContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final viewModel = context.watch<CatalogViewModel>();
-    final cartService = locator<CartService>();
 
     return Scaffold(
       backgroundColor: AppColors.background,
       body: CustomScrollView(
         slivers: [
-          CatalogAppBar(
-            title: 'Myson',
-            cartService: cartService,
-            onSearchChanged: viewModel.updateSearchQuery,
-          ),
+          const CatalogAppBar(title: 'Myson'),
           SliverToBoxAdapter(
             child: Column(
               children: [
