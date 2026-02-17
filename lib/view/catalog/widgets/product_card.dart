@@ -43,17 +43,23 @@ class ProductCard extends StatelessWidget {
                   child: Hero(
                     tag: 'product_image_${product.id}',
                     child: Container(
-                      padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
                         color: AppColors.secondaryBackground,
                         borderRadius: const BorderRadius.vertical(
                           top: Radius.circular(20),
                         ),
                       ),
-                      child: Center(
-                        child: Image.network(
+                      child: ClipRRect(
+                        borderRadius: const BorderRadius.vertical(
+                          top: Radius.circular(20),
+                        ),
+                        child: Image.asset(
                           product.imageUrl,
-                          fit: BoxFit.contain,
+                          width: double.infinity,
+                          height: double.infinity,
+                          fit: BoxFit.cover,
+                          errorBuilder: (context, error, stackTrace) =>
+                              const Icon(Icons.broken_image, size: 40),
                         ),
                       ),
                     ),
@@ -63,7 +69,10 @@ class ProductCard extends StatelessWidget {
                 Expanded(
                   flex: 2,
                   child: Padding(
-                    padding: const EdgeInsets.all(12.0),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10.0,
+                      vertical: 8.0,
+                    ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -77,13 +86,13 @@ class ProductCard extends StatelessWidget {
                                 color: AppColors.secondaryLabel,
                               ),
                             ),
-                            const SizedBox(height: 4),
+                            const SizedBox(height: 2),
                             Text(
                               product.name,
-                              maxLines: 2,
+                              maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               style: AppTypography.headline.copyWith(
-                                fontSize: 16,
+                                fontSize: 14,
                               ),
                             ),
                           ],

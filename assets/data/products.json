@@ -1,0 +1,290 @@
+[
+    {
+        "id": "vac-gen5",
+        "name": "Myson Gen5detect™ Kablosuz Süpürge",
+        "description": "Myson'ın en güçlü kablosuz süpürgesi. HEPA filtreleme ve lazerli toz tespiti.",
+        "price": 949.99,
+        "imageUrl": "assets/images/products/443096-01.png",
+        "category": "Vacuums"
+    },
+    {
+        "id": "vac-v15-absolute",
+        "name": "Myson V15 Detect™ Absolute",
+        "description": "Lazerli toz tespiti ve piezo sensörü ile akıllı temizlik.",
+        "price": 849.99,
+        "imageUrl": "assets/images/products/369334-01.png",
+        "category": "Vacuums"
+    },
+    {
+        "id": "vac-v12-absolute",
+        "name": "Myson V12 Detect Slim™ Absolute",
+        "description": "Hafif ve güçlü. Lazerli toz tespiti ile görünmeyen tozları görünür kılar.",
+        "price": 749.99,
+        "imageUrl": "assets/images/products/369535-01.png",
+        "category": "Vacuums"
+    },
+    {
+        "id": "vac-outsize",
+        "name": "Myson Outsize™ Absolute",
+        "description": "Geniş hazne ve geniş temizleme başlığı ile büyük evler için ideal.",
+        "price": 899.99,
+        "imageUrl": "assets/images/products/369651-01.png",
+        "category": "Vacuums"
+    },
+    {
+        "id": "vac-v11",
+        "name": "Myson V11™ Kablosuz Süpürge",
+        "description": "LCD ekran ile gerçek zamanlı raporlama ve güçlü emiş gücü.",
+        "price": 699.99,
+        "imageUrl": "assets/images/products/298884-01.png",
+        "category": "Vacuums"
+    },
+    {
+        "id": "vac-v10-absolute",
+        "name": "Myson Cyclone V10™ Absolute",
+        "description": "60 dakikaya varan kesintisiz çalışma süresi.",
+        "price": 549.99,
+        "imageUrl": "assets/images/products/226397-01.png",
+        "category": "Vacuums"
+    },
+    {
+        "id": "vac-v8",
+        "name": "Myson V8™ Absolute",
+        "description": "Hafif ve her yere ulaşan tasarım. Pratik günlük temizlik.",
+        "price": 449.99,
+        "imageUrl": "assets/images/products/214744-01.png",
+        "category": "Vacuums"
+    },
+    {
+        "id": "vac-v8-focus",
+        "name": "Myson V8 Focus Clean",
+        "description": "Kısa süreli ve etkili temizlik için optimize edilmiş versiyon.",
+        "price": 399.99,
+        "imageUrl": "assets/images/products/214744-01.png",
+        "category": "Vacuums"
+    },
+    {
+        "id": "vac-omni-glide",
+        "name": "Myson Omni-glide™",
+        "description": "Sert zeminler için her yöne hareket edebilen temizleme başlığı.",
+        "price": 429.99,
+        "imageUrl": "assets/images/products/361730-01.png",
+        "category": "Vacuums"
+    },
+    {
+        "id": "vac-gen5-outsize",
+        "name": "Myson Gen5outsize™",
+        "description": "En büyük hazne ve en güçlü motorun birleşimi.",
+        "price": 999.99,
+        "imageUrl": "assets/images/products/443096-01.png",
+        "category": "Vacuums"
+    },
+    {
+        "id": "vac-v15-submarine",
+        "name": "Myson V15s Detect Submarine™",
+        "description": "Islak ve kuru temizleme yapan ilk Myson kablosuz süpürge.",
+        "price": 1099.99,
+        "imageUrl": "assets/images/products/448798-01.png",
+        "category": "Vacuums"
+    },
+    {
+        "id": "vac-v12-submarine",
+        "name": "Myson V12 Detect Slim Submarine™",
+        "description": "Hafif gövde ile ıslak temizleme performansı.",
+        "price": 899.99,
+        "imageUrl": "assets/images/products/448798-01.png",
+        "category": "Vacuums"
+    },
+    {
+        "id": "hc-airwrap-pink",
+        "name": "Myson Airwrap™ Multi-styler (Ceramic Pink)",
+        "description": "Aşırı ısı olmadan dalgalandırır, şekillendirir ve düzleştirir.",
+        "price": 599.99,
+        "imageUrl": "assets/images/products/400714-01.png",
+        "category": "Hair Care"
+    },
+    {
+        "id": "hc-supersonic-onyx",
+        "name": "Myson Supersonic™ Saç Kurutma Makinesi",
+        "description": "Hızlı kurutma ve akıllı ısı kontrolü. Onyx Black versiyon.",
+        "price": 429.99,
+        "imageUrl": "assets/images/products/305967-01.png",
+        "category": "Hair Care"
+    },
+    {
+        "id": "hc-corrale-fuchsia",
+        "name": "Myson Corrale™ Saç Düzleştirici",
+        "description": "Esnek bakır plakalar ile daha az ısıyla daha iyi şekillendirme.",
+        "price": 499.99,
+        "imageUrl": "assets/images/products/322851-01.png",
+        "category": "Hair Care"
+    },
+    {
+        "id": "hc-supersonic-origin",
+        "name": "Myson Supersonic Origin™",
+        "description": "Temel aksesuarlarla gelen Supersonic deneyimi.",
+        "price": 389.99,
+        "imageUrl": "assets/images/products/305967-01.png",
+        "category": "Hair Care"
+    },
+    {
+        "id": "hc-airwrap-long",
+        "name": "Myson Airwrap™ Multi-styler Long",
+        "description": "Uzun saçlar için tasarlanmış özel başlıklarla Airwrap keyfi.",
+        "price": 629.99,
+        "imageUrl": "assets/images/products/400714-01.png",
+        "category": "Hair Care"
+    },
+    {
+        "id": "hc-airstrait",
+        "name": "Myson Airstrait™ Islak Kuru Şekillendirici",
+        "description": "Hava yardımıyla ıslaktan kuruya düzleştirme. Sıcak plaka yok.",
+        "price": 549.99,
+        "imageUrl": "assets/images/products/405481-01.png",
+        "category": "Hair Care"
+    },
+    {
+        "id": "hc-airwrap-complete",
+        "name": "Myson Airwrap™ Complete Long",
+        "description": "Tüm başlıkları içeren en kapsamlı saç şekillendirme seti.",
+        "price": 649.99,
+        "imageUrl": "assets/images/products/400714-01.png",
+        "category": "Hair Care"
+    },
+    {
+        "id": "hc-supersonic-pro",
+        "name": "Myson Supersonic™ Professional",
+        "description": "Salon profesyonelleri için geliştirilmiş uzun kablolu versiyon.",
+        "price": 469.99,
+        "imageUrl": "assets/images/products/305967-01.png",
+        "category": "Hair Care"
+    },
+    {
+        "id": "hc-corrale-gifting",
+        "name": "Myson Corrale™ Gifting Edition",
+        "description": "Özel renk ve prestijli seyahat çantasıyla sınırlı üretim.",
+        "price": 529.99,
+        "imageUrl": "assets/images/products/322851-01.png",
+        "category": "Hair Care"
+    },
+    {
+        "id": "hc-airwrap-origin",
+        "name": "Myson Airwrap™ Origin",
+        "description": "En popüler başlıklarla başlangıç seviyesi Airwrap seti.",
+        "price": 499.99,
+        "imageUrl": "assets/images/products/400714-01.png",
+        "category": "Hair Care"
+    },
+    {
+        "id": "hc-supersonic-blue",
+        "name": "Myson Supersonic™ Blue/Rose",
+        "description": "Özel renk koleksiyonu: Gece mavisi ve gül altın detaylar.",
+        "price": 449.99,
+        "imageUrl": "assets/images/products/305967-01.png",
+        "category": "Hair Care"
+    },
+    {
+        "id": "hc-airwrap-diffuse",
+        "name": "Myson Airwrap™ Diffuse",
+        "description": "Kıvırcık saçlar için özel difüzör başlığı içeren yeni nesil Airwrap.",
+        "price": 619.99,
+        "imageUrl": "assets/images/products/400714-01.png",
+        "category": "Hair Care"
+    },
+    {
+        "id": "aq-big-quiet",
+        "name": "Myson Purifier Big+Quiet Formaldehyde",
+        "description": "Büyük alanlar için sessiz ve güçlü hava temizleme.",
+        "price": 999.99,
+        "imageUrl": "assets/images/products/434858-01.png",
+        "category": "Air Quality"
+    },
+    {
+        "id": "aq-humidify-ph04",
+        "name": "Myson Purifier Humidify+Cool™ Formaldehyde",
+        "description": "Havadaki formaldehiti yok eder, nemlendirir ve temizler.",
+        "price": 849.99,
+        "imageUrl": "assets/images/products/369018-01.png",
+        "category": "Air Quality"
+    },
+    {
+        "id": "aq-hot-hp09",
+        "name": "Myson Purifier Hot+Cool™ Formaldehyde",
+        "description": "Isıtır, serinletir ve formaldehiti yakalayan HEPA filtreleme sunar.",
+        "price": 799.99,
+        "imageUrl": "assets/images/products/369021-01.png",
+        "category": "Air Quality"
+    },
+    {
+        "id": "aq-cool-tp09",
+        "name": "Myson Purifier Cool™ Formaldehyde",
+        "description": "Sadece serinletme ve üst düzey formaldehit temizleme özelliği.",
+        "price": 699.99,
+        "imageUrl": "assets/images/products/369690-01.png",
+        "category": "Air Quality"
+    },
+    {
+        "id": "aq-hot-hp7a",
+        "name": "Myson Purifier Hot+Cool™ Autoreact",
+        "description": "Otomatik sensörler ile kirliliği algılar ve temizler.",
+        "price": 649.99,
+        "imageUrl": "assets/images/products/368940-01.png",
+        "category": "Air Quality"
+    },
+    {
+        "id": "aq-cool-tp7a",
+        "name": "Myson Purifier Cool™ Autoreact",
+        "description": "Saf serinlik ve otomatik temizleme performansı.",
+        "price": 549.99,
+        "imageUrl": "assets/images/products/369165-01.png",
+        "category": "Air Quality"
+    },
+    {
+        "id": "aq-hot-hp10",
+        "name": "Myson Purifier Hot+Cool™ Gen1",
+        "description": "Yeni nesil temel ısınma ve temizleme çözümü.",
+        "price": 599.99,
+        "imageUrl": "assets/images/products/368940-01.png",
+        "category": "Air Quality"
+    },
+    {
+        "id": "aq-cool-tp10",
+        "name": "Myson Purifier Cool™ Gen1",
+        "description": "Modern tasarım ve etkili HEPA filtreleme.",
+        "price": 499.99,
+        "imageUrl": "assets/images/products/369165-01.png",
+        "category": "Air Quality"
+    },
+    {
+        "id": "aq-humidify-ph03",
+        "name": "Myson Purifier Humidify+Cool™",
+        "description": "Hijyenik nemlendirme ve HEPA temizleme bir arada.",
+        "price": 799.99,
+        "imageUrl": "assets/images/products/369018-01.png",
+        "category": "Air Quality"
+    },
+    {
+        "id": "aq-hot-hp00",
+        "name": "Myson Pure Hot+Cool™",
+        "description": "Kompakt tasarım: Isıtır, serinletir, temizler.",
+        "price": 449.99,
+        "imageUrl": "assets/images/products/368940-01.png",
+        "category": "Air Quality"
+    },
+    {
+        "id": "aq-cool-tp03",
+        "name": "Myson Pure Cool™ Link",
+        "description": "Mobil uygulama üzerinden kontrol edilebilen akıllı hava temizleyici.",
+        "price": 399.99,
+        "imageUrl": "assets/images/products/308033-01.png",
+        "category": "Air Quality"
+    },
+    {
+        "id": "aq-big-quiet-bp02",
+        "name": "Myson HEPA Big+Quiet Formaldehyde",
+        "description": "Ofisler ve geniş salonlar için profesyonel hava temizleme cihazı.",
+        "price": 949.99,
+        "imageUrl": "assets/images/products/434858-01.png",
+        "category": "Air Quality"
+    }
+]

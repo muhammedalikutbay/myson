@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myson/core/constants/app_design_tokens.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CatalogInfoDialog extends StatelessWidget {
   const CatalogInfoDialog({super.key});
@@ -9,6 +10,13 @@ class CatalogInfoDialog extends StatelessWidget {
       context: context,
       builder: (context) => const CatalogInfoDialog(),
     );
+  }
+
+  Future<void> _launchGitHub() async {
+    final Uri url = Uri.parse('https://github.com/muhammedalikutbay/myson');
+    if (!await launchUrl(url)) {
+      throw Exception('Could not launch $url');
+    }
   }
 
   @override
@@ -40,6 +48,31 @@ class CatalogInfoDialog extends StatelessWidget {
             _buildInfoRow('Project', 'Myson - Premium E-Commerce'),
             _buildInfoRow('Stack', 'Flutter, MVVM, Provider'),
             _buildInfoRow('Design', 'Glassmorphism, Premium UI'),
+            const SizedBox(height: 12),
+            GestureDetector(
+              onTap: _launchGitHub,
+              child: Row(
+                children: [
+                  Text(
+                    'Repository:',
+                    style: AppTypography.bodyLarge.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      'github.com/muhammedalikutbay/myson',
+                      style: AppTypography.bodyLarge.copyWith(
+                        color: AppColors.primaryBlue,
+                        decoration: TextDecoration.underline,
+                      ),
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                ],
+              ),
+            ),
             const SizedBox(height: 24),
             Text(
               'About the Project',
@@ -51,20 +84,40 @@ class CatalogInfoDialog extends StatelessWidget {
               style: AppTypography.bodySmall,
             ),
             const SizedBox(height: 32),
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                onPressed: () => Navigator.pop(context),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.black,
-                  foregroundColor: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
+            Row(
+              children: [
+                Expanded(
+                  child: OutlinedButton(
+                    onPressed: _launchGitHub,
+                    style: OutlinedButton.styleFrom(
+                      side: const BorderSide(color: Colors.black),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                    ),
+                    child: const Text(
+                      'View on GitHub',
+                      style: TextStyle(color: Colors.black),
+                    ),
                   ),
-                  padding: const EdgeInsets.symmetric(vertical: 16),
                 ),
-                child: const Text('Close'),
-              ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () => Navigator.pop(context),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.black,
+                      foregroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                    ),
+                    child: const Text('Close'),
+                  ),
+                ),
+              ],
             ),
           ],
         ),

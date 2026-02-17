@@ -46,7 +46,7 @@ class ProductDetailView extends StatelessWidget {
                     vertical: 60,
                     horizontal: 20,
                   ),
-                  child: Image.network(product.imageUrl, fit: BoxFit.contain),
+                  child: Image.asset(product.imageUrl, fit: BoxFit.contain),
                 ),
               ),
             ),

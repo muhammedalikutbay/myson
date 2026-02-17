@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:myson/core/constants/app_design_tokens.dart';
-import 'package:myson/view/catalog/widgets/catalog_info_dialog.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CatalogAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   final VoidCallback? onInfoPressed;
 
   const CatalogAppBar({super.key, required this.title, this.onInfoPressed});
+
+  Future<void> _launchGitHub() async {
+    final Uri url = Uri.parse('https://github.com/muhammedalikutbay/myson');
+    if (!await launchUrl(url)) {
+      throw Exception('Could not launch $url');
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -24,11 +31,7 @@ class CatalogAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         IconButton(
           icon: const Icon(Icons.info_outline, color: Colors.black),
-          onPressed:
-              onInfoPressed ??
-              () {
-                CatalogInfoDialog.show(context);
-              },
+          onPressed: onInfoPressed ?? _launchGitHub,
         ),
         const SizedBox(width: 8),
       ],

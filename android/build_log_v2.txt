@@ -1,0 +1,1291 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/C:/Users/Kutbay/.gradle/wrapper/dists/gradle-8.5-all/3zlzzgtsutfj0pbojr50n2l7z/gradle-8.5/lib/native-platform-0.22-milestone-25.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Initialized native services in: C:\Users\Kutbay\.gradle\native
+Initialized jansi services in: C:\Users\Kutbay\.gradle\native
+Received JVM installation metadata from 'C:\Program Files\Java\jdk-25': {JAVA_HOME=C:\Program Files\Java\jdk-25, JAVA_VERSION=25.0.1, JAVA_VENDOR=Oracle Corporation, RUNTIME_NAME=Java(TM) SE Runtime Environment, RUNTIME_VERSION=25.0.1+8-LTS-27, VM_NAME=Java HotSpot(TM) 64-Bit Server VM, VM_VERSION=25.0.1+8-LTS-27, VM_VENDOR=Oracle Corporation, OS_ARCH=amd64}
+Starting process 'command 'C:\Program Files\Android\Android Studio\jbr\bin\java.exe''. Working directory: C:\Users\Kutbay\.gradle\.tmp\tmp-jvm8087723929461493757probe Command: C:\Program Files\Android\Android Studio\jbr\bin\java.exe -Xmx32m -Xms32m -cp . JavaProbe
+Successfully started process 'command 'C:\Program Files\Android\Android Studio\jbr\bin\java.exe''
+Received JVM installation metadata from 'C:\Program Files\Android\Android Studio\jbr': {JAVA_HOME=C:\Program Files\Android\Android Studio\jbr, JAVA_VERSION=21.0.8, JAVA_VENDOR=JetBrains s.r.o., RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=21.0.8+-14196175-b1038.72, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=21.0.8+-14196175-b1038.72, VM_VENDOR=JetBrains s.r.o., OS_ARCH=amd64}
+Found daemon DaemonInfo{pid=27900, address=[79fc2cbf-ecb7-4f4c-b25c-b198389e142b port:57604, addresses:[/127.0.0.1]], state=Idle, lastBusy=1771267278604, context=DefaultDaemonContext[uid=f2c3d650-cc6f-4c77-a910-ea471ef16a4e,javaHome=C:\Program Files\Java\jdk-25,daemonRegistryDir=C:\Users\Kutbay\.gradle\daemon,pid=27900,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=-XX:MaxMetaspaceSize=4G,-XX:ReservedCodeCacheSize=512m,-XX:+HeapDumpOnOutOfMemoryError,--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx8G,-Dfile.encoding=UTF-8,-Duser.country=TR,-Duser.language=tr,-Duser.variant]} however its context does not match the desired criteria.
+Java home is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=C:\Program Files\Android\Android Studio\jbr,daemonRegistryDir=C:\Users\Kutbay\.gradle\daemon,pid=13208,idleTimeout=null,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=-XX:MaxMetaspaceSize=4G,-XX:ReservedCodeCacheSize=512m,-XX:+HeapDumpOnOutOfMemoryError,--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx8G,-Dfile.encoding=UTF-8,-Duser.country=TR,-Duser.language=tr,-Duser.variant]
+Actual: DefaultDaemonContext[uid=f2c3d650-cc6f-4c77-a910-ea471ef16a4e,javaHome=C:\Program Files\Java\jdk-25,daemonRegistryDir=C:\Users\Kutbay\.gradle\daemon,pid=27900,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=-XX:MaxMetaspaceSize=4G,-XX:ReservedCodeCacheSize=512m,-XX:+HeapDumpOnOutOfMemoryError,--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx8G,-Dfile.encoding=UTF-8,-Duser.country=TR,-Duser.language=tr,-Duser.variant]
+
+  Looking for a different daemon...
+Removing 0 daemon stop events from registry
+Starting a Gradle Daemon, 1 busy and 1 incompatible Daemons could not be reused, use --status for details
+Starting process 'Gradle build daemon'. Working directory: C:\Users\Kutbay\.gradle\daemon\8.5 Command: C:\Program Files\Android\Android Studio\jbr\bin\java.exe -XX:MaxMetaspaceSize=4G -XX:ReservedCodeCacheSize=512m -XX:+HeapDumpOnOutOfMemoryError --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED -Xmx8G -Dfile.encoding=UTF-8 -Duser.country=TR -Duser.language=tr -Duser.variant -cp C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\gradle-launcher-8.5.jar -javaagent:C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\agents\gradle-instrumentation-agent-8.5.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 8.5
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 1.405 secs.
+The client will now receive all logging from the daemon (pid: 29056). The daemon log file: C:\Users\Kutbay\.gradle\daemon\8.5\daemon-29056.out.log
+Starting build in new daemon [memory: 8 GiB]
+Using 12 worker leases.
+Received JVM installation metadata from 'C:\Program Files\Android\Android Studio\jbr': {JAVA_HOME=C:\Program Files\Android\Android Studio\jbr, JAVA_VERSION=21.0.8, JAVA_VENDOR=JetBrains s.r.o., RUNTIME_NAME=Java(TM) SE Runtime Environment, RUNTIME_VERSION=21.0.8+-14196175-b1038.72, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=21.0.8+-14196175-b1038.72, VM_VENDOR=JetBrains s.r.o., OS_ARCH=amd64}
+Watching the file system is configured to be enabled if available
+Now considering [C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android] as hierarchies to watch
+File system watching is active
+Starting Build
+Skipping Kotlin DSL script compilation (Settings/TopLevel/stage1) as it is up-to-date.
+Now considering [C:\Users\Kutbay\flutter\packages\flutter_tools\gradle, C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android] as hierarchies to watch
+Skipping Kotlin DSL script compilation (Settings/TopLevel/stage1) as it is up-to-date.
+
+> Configure project :gradle
+Evaluating project ':gradle' using build file 'C:\Users\Kutbay\flutter\packages\flutter_tools\gradle\build.gradle.kts'.
+Caching disabled for Kotlin DSL plugin specs accessors for classpath '88f21b562c7d422f7231428dbdb6eb94' because:
+  Build cache is disabled
+Skipping Kotlin DSL plugin specs accessors for classpath '88f21b562c7d422f7231428dbdb6eb94' as it is up-to-date.
+Caching disabled for Kotlin DSL script compilation (Project/TopLevel/stage1) because:
+  Build cache is disabled
+Skipping Kotlin DSL script compilation (Project/TopLevel/stage1) as it is up-to-date.
+Using Kotlin Gradle Plugin gradle81 variant
+kotlin scripting plugin: created the scripting discovery configuration: kotlinScriptDef
+kotlin scripting plugin: created the scripting discovery configuration: testKotlinScriptDef
+file or directory 'C:\Users\Kutbay\flutter\packages\flutter_tools\gradle\src\main\java', not found
+Caching disabled for Kotlin DSL accessors for project ':gradle' because:
+  Build cache is disabled
+Skipping Kotlin DSL accessors for project ':gradle' as it is up-to-date.
+Caching disabled for Kotlin DSL script compilation (Project/TopLevel/stage2) because:
+  Build cache is disabled
+Skipping Kotlin DSL script compilation (Project/TopLevel/stage2) as it is up-to-date.
+Resolve mutations for :gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#86,Execution worker,5,main]) started.
+:gradle:checkKotlinGradlePluginConfigurationErrors (Thread[#86,Execution worker,5,main]) started.
+
+> Task :gradle:checkKotlinGradlePluginConfigurationErrors
+Caching disabled for task ':gradle:checkKotlinGradlePluginConfigurationErrors' because:
+  Build cache is disabled
+Task ':gradle:checkKotlinGradlePluginConfigurationErrors' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :gradle:compileKotlin (Thread[#86,Execution worker,5,main]) started.
+:gradle:compileKotlin (Thread[#86,Execution worker,5,main]) started.
+
+> Task :gradle:compileKotlin UP-TO-DATE
+Invalidating in-memory cache of C:\Users\Kutbay\flutter\packages\flutter_tools\gradle\.gradle\buildOutputCleanup\outputFiles.bin
+Invalidating in-memory cache of C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android\.gradle\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android\.gradle\8.5\fileHashes\resourceHashesCache.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\journal-1\file-access.bin
+Transforming gradle-api-8.5.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-ant-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-astbuilder-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-console-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-datetime-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-dateutil-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-groovydoc-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-json-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-nio-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-sql-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-templates-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-test-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming groovy-xml-3.0.17.jar with ClasspathEntrySnapshotTransform
+Transforming javaparser-core-3.17.0.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-1.9.20.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-reflect-1.9.20.jar with ClasspathEntrySnapshotTransform
+Transforming gradle-installation-beacon-8.5.jar with ClasspathEntrySnapshotTransform
+Transforming gradle-kotlin-dsl-extensions-8.5.jar with ClasspathEntrySnapshotTransform
+Transforming gradle-kotlin-dsl-8.5.jar with ClasspathEntrySnapshotTransform
+Transforming gradle-kotlin-dsl-shared-runtime-8.5.jar with ClasspathEntrySnapshotTransform
+Transforming gradle-kotlin-dsl-tooling-models-8.5.jar with ClasspathEntrySnapshotTransform
+Transforming annotation-jvm-1.9.1.jar with ClasspathEntrySnapshotTransform
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\resourceHashesCache.bin
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-console-3.0.17.jar because:
+  Build cache is disabled
+Transforming gradle-8.11.1.jar with ClasspathEntrySnapshotTransform
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-datetime-3.0.17.jar because:
+  Build cache is disabled
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-groovydoc-3.0.17.jar because:
+  Build cache is disabled
+Transforming kotlin-reflect-1.9.20.jar with ClasspathEntrySnapshotTransform
+Transforming kotlinx-serialization-json-jvm-1.4.0.jar with ClasspathEntrySnapshotTransform
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-ant-3.0.17.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-groovydoc-3.0.17.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-nio-3.0.17.jar because:
+  Build cache is disabled
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-dateutil-3.0.17.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-nio-3.0.17.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-sql-3.0.17.jar because:
+  Build cache is disabled
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-3.0.17.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-3.0.17.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-astbuilder-3.0.17.jar because:
+  Build cache is disabled
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\8.5\generated-gradle-jars\gradle-api-8.5.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-console-3.0.17.jar as it is up-to-date.
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\8.5\generated-gradle-jars\gradle-api-8.5.jar as it is up-to-date.
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-astbuilder-3.0.17.jar as it is up-to-date.
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-sql-3.0.17.jar as it is up-to-date.
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-dateutil-3.0.17.jar as it is up-to-date.
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-ant-3.0.17.jar as it is up-to-date.
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-datetime-3.0.17.jar as it is up-to-date.
+Transforming kotlinx-serialization-core-jvm-1.4.0.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-jdk8-1.8.0.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-jdk7-1.8.0.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-stdlib-1.9.24.jar with ClasspathEntrySnapshotTransform
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-json-3.0.17.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-json-3.0.17.jar as it is up-to-date.
+Transforming kotlin-gradle-plugin-1.8.0-gradle76.jar with ClasspathEntrySnapshotTransform
+Transforming builder-8.11.1.jar with ClasspathEntrySnapshotTransform
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\gradle-kotlin-dsl-tooling-models-8.5.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\gradle-kotlin-dsl-tooling-models-8.5.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\gradle-kotlin-dsl-shared-runtime-8.5.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\gradle-kotlin-dsl-shared-runtime-8.5.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-test-3.0.17.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-test-3.0.17.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-xml-3.0.17.jar because:
+  Build cache is disabled
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-templates-3.0.17.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-xml-3.0.17.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\kotlin-reflect-1.9.20.jar because:
+  Build cache is disabled
+Transforming builder-model-8.11.1.jar with ClasspathEntrySnapshotTransform
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\kotlin-reflect-1.9.20.jar as it is up-to-date.
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\groovy-templates-3.0.17.jar as it is up-to-date.
+Transforming gradle-api-8.11.1.jar with ClasspathEntrySnapshotTransform
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\javaparser-core-3.17.0.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\javaparser-core-3.17.0.jar as it is up-to-date.
+Transforming kotlin-gradle-plugin-model-1.8.0.jar with ClasspathEntrySnapshotTransform
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\gradle-kotlin-dsl-extensions-8.5.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\gradle-kotlin-dsl-extensions-8.5.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\kotlin-stdlib-1.9.20.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\kotlin-stdlib-1.9.20.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\gradle-kotlin-dsl-8.5.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\gradle-kotlin-dsl-8.5.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android.tools.build\gradle\8.11.1\7861a99a64716fd75ce85a3c7e2fcb3a9e928857\gradle-8.11.1.jar because:
+  Build cache is disabled
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlinx\kotlinx-serialization-core-jvm\1.4.0\9b00d574374ae0201a505ab54c7744586866dc27\kotlinx-serialization-core-jvm-1.4.0.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlinx\kotlinx-serialization-core-jvm\1.4.0\9b00d574374ae0201a505ab54c7744586866dc27\kotlinx-serialization-core-jvm-1.4.0.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk7\1.8.0\3c91271347f678c239607abb676d4032a7898427\kotlin-stdlib-jdk7-1.8.0.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android.tools.build\gradle\8.11.1\7861a99a64716fd75ce85a3c7e2fcb3a9e928857\gradle-8.11.1.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.annotation\annotation-jvm\1.9.1\b17951747e38bf3986a24431b9ba0d039958aa5f\annotation-jvm-1.9.1.jar because:
+  Build cache is disabled
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk8\1.8.0\ed04f49e186a116753ad70d34f0ac2925d1d8020\kotlin-stdlib-jdk8-1.8.0.jar because:
+  Build cache is disabled
+Transforming kotlin-gradle-plugin-api-1.8.0-gradle76.jar with ClasspathEntrySnapshotTransform
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk7\1.8.0\3c91271347f678c239607abb676d4032a7898427\kotlin-stdlib-jdk7-1.8.0.jar as it is up-to-date.
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk8\1.8.0\ed04f49e186a116753ad70d34f0ac2925d1d8020\kotlin-stdlib-jdk8-1.8.0.jar as it is up-to-date.
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.annotation\annotation-jvm\1.9.1\b17951747e38bf3986a24431b9ba0d039958aa5f\annotation-jvm-1.9.1.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\gradle-installation-beacon-8.5.jar because:
+  Build cache is disabled
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlinx\kotlinx-serialization-json-jvm\1.4.0\cfa3e57d044a20e5c9e4561a997df823e2f1c81a\kotlinx-serialization-json-jvm-1.4.0.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\wrapper\dists\gradle-8.5-all\3zlzzgtsutfj0pbojr50n2l7z\gradle-8.5\lib\gradle-installation-beacon-8.5.jar as it is up-to-date.
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlinx\kotlinx-serialization-json-jvm\1.4.0\cfa3e57d044a20e5c9e4561a997df823e2f1c81a\kotlinx-serialization-json-jvm-1.4.0.jar as it is up-to-date.
+Transforming kotlin-gradle-plugin-api-1.8.0.jar with ClasspathEntrySnapshotTransform
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.9.24\9928532f12c66ad816a625b3f9984f8368ca6d2b\kotlin-stdlib-1.9.24.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.9.24\9928532f12c66ad816a625b3f9984f8368ca6d2b\kotlin-stdlib-1.9.24.jar as it is up-to-date.
+Transforming kotlin-tooling-core-1.8.0.jar with ClasspathEntrySnapshotTransform
+Transforming annotations-13.0.jar with ClasspathEntrySnapshotTransform
+Transforming manifest-merger-31.11.1.jar with ClasspathEntrySnapshotTransform
+Transforming zipflinger-8.11.1.jar with ClasspathEntrySnapshotTransform
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-gradle-plugin\1.8.0\d79a079634e8d3bd92c594b224f4de2086bb4a10\kotlin-gradle-plugin-1.8.0-gradle76.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-gradle-plugin\1.8.0\d79a079634e8d3bd92c594b224f4de2086bb4a10\kotlin-gradle-plugin-1.8.0-gradle76.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android.tools.build\builder\8.11.1\52ae05e99786bd491ad363825acbc2476c8b905\builder-8.11.1.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android.tools.build\builder\8.11.1\52ae05e99786bd491ad363825acbc2476c8b905\builder-8.11.1.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-gradle-plugin-api\1.8.0\29f79a3bb109e05b07f1d2893074ab176a4276e0\kotlin-gradle-plugin-api-1.8.0.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-gradle-plugin-api\1.8.0\29f79a3bb109e05b07f1d2893074ab176a4276e0\kotlin-gradle-plugin-api-1.8.0.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-gradle-plugin-model\1.8.0\9da2fce7af0a94348001ee8dd20a82167f5de284\kotlin-gradle-plugin-model-1.8.0.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-gradle-plugin-model\1.8.0\9da2fce7af0a94348001ee8dd20a82167f5de284\kotlin-gradle-plugin-model-1.8.0.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android.tools.build\builder-model\8.11.1\6888ed42b8bcc73e3a378048263d2cad36707494\builder-model-8.11.1.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android.tools.build\builder-model\8.11.1\6888ed42b8bcc73e3a378048263d2cad36707494\builder-model-8.11.1.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar because:
+  Build cache is disabled
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android.tools.build\gradle-api\8.11.1\e0ce2faa3fe7331e1e6855e5aa699c650f6d56c3\gradle-api-8.11.1.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-gradle-plugin-api\1.8.0\29f79a3bb109e05b07f1d2893074ab176a4276e0\kotlin-gradle-plugin-api-1.8.0-gradle76.jar because:
+  Build cache is disabled
+Transforming apksig-8.11.1.jar with ClasspathEntrySnapshotTransform
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-gradle-plugin-api\1.8.0\29f79a3bb109e05b07f1d2893074ab176a4276e0\kotlin-gradle-plugin-api-1.8.0-gradle76.jar as it is up-to-date.
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android.tools.build\gradle-api\8.11.1\e0ce2faa3fe7331e1e6855e5aa699c650f6d56c3\gradle-api-8.11.1.jar as it is up-to-date.
+Transforming apkzlib-8.11.1.jar with ClasspathEntrySnapshotTransform
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-tooling-core\1.8.0\da3a4252e4b48833eb566227b2baecbaede8993\kotlin-tooling-core-1.8.0.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-tooling-core\1.8.0\da3a4252e4b48833eb566227b2baecbaede8993\kotlin-tooling-core-1.8.0.jar as it is up-to-date.
+Transforming javawriter-2.5.0.jar with ClasspathEntrySnapshotTransform
+Transforming asm-9.7.1.jar with ClasspathEntrySnapshotTransform
+Transforming kotlin-native-utils-1.8.0.jar with ClasspathEntrySnapshotTransform
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android\zipflinger\8.11.1\3a3b1786c331db72b9610eb1f68f0ec1ec9a1f\zipflinger-8.11.1.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android\zipflinger\8.11.1\3a3b1786c331db72b9610eb1f68f0ec1ec9a1f\zipflinger-8.11.1.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android.tools.build\apksig\8.11.1\f005788487574c7d6ba23dea63bf8cb3a4f164a6\apksig-8.11.1.jar because:
+  Build cache is disabled
+Transforming kotlin-project-model-1.8.0.jar with ClasspathEntrySnapshotTransform
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android.tools.build\apksig\8.11.1\f005788487574c7d6ba23dea63bf8cb3a4f164a6\apksig-8.11.1.jar as it is up-to-date.
+Transforming kotlin-util-io-1.8.0.jar with ClasspathEntrySnapshotTransform
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\9.7.1\f0ed132a49244b042cd0e15702ab9f2ce3cc8436\asm-9.7.1.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\9.7.1\f0ed132a49244b042cd0e15702ab9f2ce3cc8436\asm-9.7.1.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-util-io\1.8.0\1d7ca3cc3c24111ca8a12e29b10d6df0f778afd8\kotlin-util-io-1.8.0.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-util-io\1.8.0\1d7ca3cc3c24111ca8a12e29b10d6df0f778afd8\kotlin-util-io-1.8.0.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android.tools.build\manifest-merger\31.11.1\2eb20f98b2e71c3a1a2ebe675910e6958a7e1b78\manifest-merger-31.11.1.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android.tools.build\manifest-merger\31.11.1\2eb20f98b2e71c3a1a2ebe675910e6958a7e1b78\manifest-merger-31.11.1.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.squareup\javawriter\2.5.0\81241ff7078ef14f42ea2a8995fa09c096256e6b\javawriter-2.5.0.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.squareup\javawriter\2.5.0\81241ff7078ef14f42ea2a8995fa09c096256e6b\javawriter-2.5.0.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android.tools.build\apkzlib\8.11.1\ea2327cd7a67c0fc9a4d26f035b922dff11c7219\apkzlib-8.11.1.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android.tools.build\apkzlib\8.11.1\ea2327cd7a67c0fc9a4d26f035b922dff11c7219\apkzlib-8.11.1.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-native-utils\1.8.0\73361435f42e1fecbd81f686ccaa8aa1c498b941\kotlin-native-utils-1.8.0.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-native-utils\1.8.0\73361435f42e1fecbd81f686ccaa8aa1c498b941\kotlin-native-utils-1.8.0.jar as it is up-to-date.
+Caching disabled for ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-project-model\1.8.0\2b8d20018168339835a79512f46f3251ff09caf5\kotlin-project-model-1.8.0.jar because:
+  Build cache is disabled
+Skipping ClasspathEntrySnapshotTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-project-model\1.8.0\2b8d20018168339835a79512f46f3251ff09caf5\kotlin-project-model-1.8.0.jar as it is up-to-date.
+Caching disabled for task ':gradle:compileKotlin' because:
+  Build cache is disabled
+Skipping task ':gradle:compileKotlin' as it is up-to-date.
+Resolve mutations for :gradle:compileJava (Thread[#86,Execution worker,5,main]) started.
+:gradle:compileJava (Thread[#86,Execution worker,5,main]) started.
+
+> Task :gradle:compileJava NO-SOURCE
+Skipping task ':gradle:compileJava' as it has no source files and no previous output files.
+Resolve mutations for :gradle:compileGroovy (Thread[#86,Execution worker,5,main]) started.
+:gradle:compileGroovy (Thread[#85,included builds,5,main]) started.
+
+> Task :gradle:compileGroovy NO-SOURCE
+Skipping task ':gradle:compileGroovy' as it has no source files and no previous output files.
+Resolve mutations for :gradle:pluginDescriptors (Thread[#86,Execution worker,5,main]) started.
+:gradle:pluginDescriptors (Thread[#86,Execution worker,5,main]) started.
+
+> Task :gradle:pluginDescriptors UP-TO-DATE
+Caching disabled for task ':gradle:pluginDescriptors' because:
+  Build cache is disabled
+Skipping task ':gradle:pluginDescriptors' as it is up-to-date.
+Resolve mutations for :gradle:processResources (Thread[#85,included builds,5,main]) started.
+:gradle:processResources (Thread[#85,included builds,5,main]) started.
+
+> Task :gradle:processResources UP-TO-DATE
+Caching disabled for task ':gradle:processResources' because:
+  Build cache is disabled
+Skipping task ':gradle:processResources' as it is up-to-date.
+Resolve mutations for :gradle:classes (Thread[#85,included builds,5,main]) started.
+:gradle:classes (Thread[#85,included builds,5,main]) started.
+
+> Task :gradle:classes UP-TO-DATE
+Skipping task ':gradle:classes' as it has no actions.
+Resolve mutations for :gradle:jar (Thread[#85,included builds,5,main]) started.
+:gradle:jar (Thread[#85,included builds,5,main]) started.
+
+> Task :gradle:jar UP-TO-DATE
+Caching disabled for task ':gradle:jar' because:
+  Build cache is disabled
+Skipping task ':gradle:jar' as it is up-to-date.
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\kotlin-dsl\executionHistory.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\journal-1\file-access.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\resourceHashesCache.bin
+Skipping Kotlin DSL script compilation (Settings/ScriptPlugin/stage1) as it is up-to-date.
+Cannot use Kotlin build script compile avoidance with C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android.tools.build\gradle\8.3.2\92b2d743ea3e3cdba8b939a94465b2ba654e7b11\gradle-8.3.2.jar: class com/android/build/gradle/internal/utils/GuavaKtxKt: inline fun immutableListBuilder(): compile avoidance is not supported with public inline functions
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\resourceHashesCache.bin
+Cannot use Kotlin build script compile avoidance with C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-gradle-plugin\1.9.24\b6f5f875b19f9240f2e83e00f6f2b9dff1ebc2c3\kotlin-gradle-plugin-1.9.24-gradle82.jar: class org/jetbrains/kotlin/gradle/internal/KaptWithAndroid: inline fun androidVariantData(): compile avoidance is not supported with public inline functions
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\resourceHashesCache.bin
+Cannot use Kotlin build script compile avoidance with C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.android.tools.build\bundletool\1.15.6\d804e9cf5387426500061a8e0eb5602d50a49e56\bundletool-1.15.6.jar: class shadow/bundletool/com/android/utils/NodeCollectionHelperKt: inline fun forEach(): compile avoidance is not supported with public inline functions
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\resourceHashesCache.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\resourceHashesCache.bin
+Cannot use Kotlin build script compile avoidance with C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-compiler-embeddable\1.9.24\78dab849090e6c5e2eadb6e59a11cdc28fb67a08\kotlin-compiler-embeddable-1.9.24.jar: class org/jetbrains/kotlin/konan/file/FileKt: inline fun use(): compile avoidance is not supported with public inline functions
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\resourceHashesCache.bin
+Cannot use Kotlin build script compile avoidance with C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-util-io\1.9.24\f402c94b93eab99bb1af746126cf979c748064cf\kotlin-util-io-1.9.24.jar: class org/jetbrains/kotlin/konan/file/FileKt: inline fun use(): compile avoidance is not supported with public inline functions
+Kotlin DSL script compilation (Settings/TopLevel/stage2) is not up-to-date because:
+  No history is available.
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\resourceHashesCache.bin
+Settings evaluated using settings file 'C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android\settings.gradle.kts'.
+Projects loaded. Root project using build file 'C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android\build.gradle.kts'.
+Included projects: [root project 'android', project ':app', project ':url_launcher_android']
+
+> Configure project :
+Evaluating root project 'android' using build file 'C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android\build.gradle.kts'.
+Caching disabled for Kotlin DSL plugin specs accessors for classpath 'd0a7cafb16302ae45551a144d521a5c7' because:
+  Build cache is disabled
+Kotlin DSL plugin specs accessors for classpath 'd0a7cafb16302ae45551a144d521a5c7' is not up-to-date because:
+  No history is available.
+Caching disabled for Kotlin DSL script compilation (Project/TopLevel/stage1) because:
+  Build cache is disabled
+Kotlin DSL script compilation (Project/TopLevel/stage1) is not up-to-date because:
+  No history is available.
+Caching disabled for Kotlin DSL accessors for root project 'android' because:
+  Build cache is disabled
+Kotlin DSL accessors for root project 'android' is not up-to-date because:
+  No history is available.
+Caching disabled for Kotlin DSL script compilation (Project/TopLevel/stage2) because:
+  Build cache is disabled
+Kotlin DSL script compilation (Project/TopLevel/stage2) is not up-to-date because:
+  No history is available.
+
+> Configure project :app
+Evaluating project ':app' using build file 'C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android\app\build.gradle.kts'.
+Caching disabled for Kotlin DSL script compilation (Project/TopLevel/stage1) because:
+  Build cache is disabled
+Kotlin DSL script compilation (Project/TopLevel/stage1) is not up-to-date because:
+  No history is available.
+Using default execution profile
+Using Kotlin Gradle Plugin gradle82 variant
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\resourceHashesCache.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\kotlin-dsl\executionHistory.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\journal-1\file-access.bin
+Caching disabled for Kotlin DSL script compilation (Project/ScriptPlugin/stage1) because:
+  Build cache is disabled
+Kotlin DSL script compilation (Project/ScriptPlugin/stage1) is not up-to-date because:
+  No history is available.
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\resourceHashesCache.bin
+Warning: Flutter support for your project's Gradle version (8.5.0) will soon be dropped. Please upgrade your Gradle version to a version of at least 8.7.0 soon.
+Alternatively, use the flag "--android-skip-build-dependency-validation" to bypass this check.
+
+Potential fix: Your project's gradle version is typically defined in the gradle wrapper file. By default, this can be found at C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android/gradle/wrapper/gradle-wrapper.properties. 
+For more information, see https://docs.gradle.org/current/userguide/gradle_wrapper.html.
+
+Warning: Flutter support for your project's Android Gradle Plugin version (Android Gradle Plugin version 8.3.2) will soon be dropped. Please upgrade your Android Gradle Plugin version to a version of at least Android Gradle Plugin version 8.6.0 soon.
+Alternatively, use the flag "--android-skip-build-dependency-validation" to bypass this check.
+
+Potential fix: Your project's AGP version is typically defined in the plugins block of the `settings.gradle` file (C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android/settings.gradle), by a plugin with the id of com.android.application. 
+If you don't see a plugins block, your project was likely created with an older template version. In this case it is most likely defined in the top-level build.gradle file (C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android/build.gradle) by the following line in the dependencies block of the buildscript: "classpath 'com.android.tools.build:gradle:<version>'".
+
+Warning: Flutter support for your project's Kotlin version (1.9.24) will soon be dropped. Please upgrade your Kotlin version to a version of at least 2.1.0 soon.
+Alternatively, use the flag "--android-skip-build-dependency-validation" to bypass this check.
+
+Potential fix: Your project's KGP version is typically defined in the plugins block of the `settings.gradle` file (C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android/settings.gradle), by a plugin with the id of org.jetbrains.kotlin.android. 
+If you don't see a plugins block, your project was likely created with an older template version, in which case it is most likely defined in the top-level build.gradle file (C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android/build.gradle) by the ext.kotlin_version property.
+
+Caching disabled for Kotlin DSL accessors for project ':app' because:
+  Build cache is disabled
+Kotlin DSL accessors for project ':app' is not up-to-date because:
+  No history is available.
+Caching disabled for Kotlin DSL script compilation (Project/TopLevel/stage2) because:
+  Build cache is disabled
+Kotlin DSL script compilation (Project/TopLevel/stage2) is not up-to-date because:
+  No history is available.
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+C/C++: android.ndkVersion from module build.gradle is [28.2.13676358]
+C/C++: android.ndkPath from module build.gradle is not set
+C/C++: ndk.dir in local.properties is not set
+C/C++: Not considering ANDROID_NDK_HOME because support was removed after deprecation period.
+C/C++: sdkFolder is C:\Users\Kutbay\AppData\Local\Android\sdk
+Parsed shrinker version: 8.3.37
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\journal-1\file-access.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\resourceHashesCache.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\journal-1\file-access.bin
+
+> Configure project :url_launcher_android
+Evaluating project ':url_launcher_android' using build file 'C:\Users\Kutbay\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.28\android\build.gradle'.
+Compiling build file 'C:\Users\Kutbay\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.28\android\build.gradle' using SubsetScriptTransformer.
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\resourceHashesCache.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\resourceHashesCache.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\resourceHashesCache.bin
+Compiling build file 'C:\Users\Kutbay\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.28\android\build.gradle' using BuildScriptTransformer.
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\resourceHashesCache.bin
+
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\journal-1\file-access.bin
+
+> Configure project :url_launcher_android
+Using default execution profile
+Warning: The plugin url_launcher_android requires Android SDK version 36 or higher.
+For more information about build configuration, see https://flutter.dev/to/review-gradle-config.
+Your project is configured to compile against Android SDK 34, but the following plugin(s) require to be compiled against a higher Android SDK version:
+- url_launcher_android compiles against Android SDK 36
+Fix this issue by compiling against the highest Android SDK version (they are backward compatible).
+Add the following to C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android\app\build.gradle.kts:
+
+    android {
+        compileSdk = 36
+        ...
+    }
+All projects evaluated.
+Task name matched 'clean'
+Task name matched 'assembleDebug'
+Selected primary task 'clean' from project :
+Selected primary task 'assembleDebug' from project :
+Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+WARNING: We recommend using a newer Android Gradle plugin to use compileSdk = 36
+
+This Android Gradle plugin (8.3.2) was tested up to compileSdk = 34.
+
+You are strongly encouraged to update your project to use a newer
+Android Gradle plugin that has been tested with compileSdk = 36.
+
+If you are already using the latest version of the Android Gradle plugin,
+you may need to wait until a newer version with support for compileSdk = 36 is available.
+
+To suppress this warning, add/update
+    android.suppressUnsupportedCompileSdk=36
+to this project's gradle.properties.
+Tasks to be executed: [task ':clean', task ':app:externalNativeBuildCleanDebug', task ':app:externalNativeBuildCleanProfile', task ':app:externalNativeBuildCleanRelease', task ':app:clean', task ':url_launcher_android:clean', task ':app:DebugMinSdkCheck', task ':app:preBuild', task ':app:preDebugBuild', task ':app:mergeDebugNativeDebugMetadata', task ':app:checkKotlinGradlePluginConfigurationErrors', task ':app:compileFlutterBuildDebug', task ':app:packJniLibsflutterBuildDebug', task ':url_launcher_android:preBuild', task ':url_launcher_android:preDebugBuild', task ':url_launcher_android:writeDebugAarMetadata', task ':app:checkDebugAarMetadata', task ':app:cleanMergeDebugAssets', task ':app:mergeDebugShaders', task ':app:compileDebugShaders', task ':app:generateDebugAssets', task ':url_launcher_android:mergeDebugShaders', task ':url_launcher_android:compileDebugShaders', task ':url_launcher_android:generateDebugAssets', task ':url_launcher_android:packageDebugAssets', task ':app:mergeDebugAssets', task ':app:copyFlutterAssetsDebug', task ':app:generateDebugResValues', task ':url_launcher_android:generateDebugResValues', task ':url_launcher_android:generateDebugResources', task ':url_launcher_android:packageDebugResources', task ':app:mapDebugSourceSetPaths', task ':app:generateDebugResources', task ':app:mergeDebugResources', task ':app:packageDebugResources', task ':app:parseDebugLocalResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':url_launcher_android:extractDeepLinksDebug', task ':url_launcher_android:processDebugManifest', task ':app:processDebugMainManifest', task ':app:outputDebugAppLinkSettings', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':url_launcher_android:compileDebugLibraryResources', task ':url_launcher_android:parseDebugLocalResources', task ':url_launcher_android:generateDebugRFile', task ':app:processDebugResources', task ':url_launcher_android:generateDebugBuildConfig', task ':url_launcher_android:javaPreCompileDebug', task ':url_launcher_android:compileDebugJavaWithJavac', task ':url_launcher_android:bundleLibCompileToJarDebug', task ':app:compileDebugKotlin', task ':app:javaPreCompileDebug', task ':app:compileDebugJavaWithJavac', task ':app:compressDebugAssets', task ':url_launcher_android:bundleLibRuntimeToJarDebug', task ':app:desugarDebugFileDependencies', task ':app:dexBuilderDebug', task ':app:mergeDebugGlobalSynthetics', task ':app:processDebugJavaRes', task ':url_launcher_android:processDebugJavaRes', task ':app:mergeDebugJavaResource', task ':app:checkDebugDuplicateClasses', task ':app:mergeExtDexDebug', task ':url_launcher_android:bundleLibRuntimeToDirDebug', task ':app:mergeLibDexDebug', task ':app:mergeProjectDexDebug', task ':app:configureCMakeDebug[arm64-v8a]', task ':app:buildCMakeDebug[arm64-v8a]', task ':app:configureCMakeDebug[armeabi-v7a]', task ':app:buildCMakeDebug[armeabi-v7a]', task ':app:configureCMakeDebug[x86_64]', task ':app:buildCMakeDebug[x86_64]', task ':app:mergeDebugJniLibFolders', task ':url_launcher_android:mergeDebugJniLibFolders', task ':url_launcher_android:mergeDebugNativeLibs', task ':url_launcher_android:copyDebugJniLibsProjectOnly', task ':app:mergeDebugNativeLibs', task ':app:stripDebugDebugSymbols', task ':app:validateSigningDebug', task ':app:writeDebugAppMetadata', task ':app:writeDebugSigningConfigVersions', task ':app:packageDebug', task ':app:createDebugApkListingFileRedirect', task ':app:assembleDebug', task ':url_launcher_android:stripDebugDebugSymbols', task ':url_launcher_android:copyDebugJniLibsProjectAndLocalJars', task ':url_launcher_android:extractDebugAnnotations', task ':url_launcher_android:extractDeepLinksForAarDebug', task ':url_launcher_android:mergeDebugGeneratedProguardFiles', task ':url_launcher_android:mergeDebugConsumerProguardFiles', task ':url_launcher_android:prepareDebugArtProfile', task ':url_launcher_android:prepareLintJarForPublish', task ':url_launcher_android:mergeDebugJavaResource', task ':url_launcher_android:syncDebugLibJars', task ':url_launcher_android:bundleDebugAar', task ':url_launcher_android:assembleDebug']
+Tasks that were excluded: []
+work action Parameters of IdentityTransform (Thread[#93,Execution worker Thread 8,5,main]) started.
+producer locations for task group 0 (Thread[#92,Execution worker Thread 7,5,main]) started.
+work action Parameters of DexingNoClasspathTransform (Thread[#93,Execution worker Thread 8,5,main]) started.
+work action Parameters of DexingOutputSplitTransform (Thread[#93,Execution worker Thread 8,5,main]) started.
+work action Parameters of ClassesDirToClassesTransform (Thread[#93,Execution worker Thread 8,5,main]) started.
+work action Parameters of DexingOutputSplitTransform (Thread[#85,included builds,5,main]) started.
+Resolve mutations for :clean (Thread[#85,included builds,5,main]) started.
+:clean (Thread[#85,included builds,5,main]) started.
+
+> Task :clean
+Caching disabled for task ':clean' because:
+  Build cache is disabled
+Task ':clean' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :app:externalNativeBuildCleanDebug (Thread[#93,Execution worker Thread 8,5,main]) started.
+:app:externalNativeBuildCleanDebug (Thread[#93,Execution worker Thread 8,5,main]) started.
+
+> Task :app:externalNativeBuildCleanDebug
+Caching disabled for task ':app:externalNativeBuildCleanDebug' because:
+  Build cache is disabled
+Task ':app:externalNativeBuildCleanDebug' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+C/C++: starting clean
+C/C++: finding existing JSONs
+C/C++: Json file not found so contents couldn't be cleaned C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\.cxx\debug\27662u3z\armeabi-v7a\android_gradle_build.json
+C/C++: Json file not found so contents couldn't be cleaned C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\.cxx\debug\27662u3z\arm64-v8a\android_gradle_build.json
+C/C++: Json file not found so contents couldn't be cleaned C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\.cxx\debug\27662u3z\x86_64\android_gradle_build.json
+C/C++: Json file not found so contents couldn't be cleaned C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\.cxx\debug\27662u3z\riscv64\android_gradle_build.json
+C/C++: Json file not found so contents couldn't be cleaned C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\.cxx\debug\27662u3z\x86\android_gradle_build.json
+C/C++: about to execute 0 clean command batches
+C/C++: clean complete
+Resolve mutations for :app:externalNativeBuildCleanProfile (Thread[#93,Execution worker Thread 8,5,main]) started.
+:app:externalNativeBuildCleanProfile (Thread[#92,Execution worker Thread 7,5,main]) started.
+
+> Task :app:externalNativeBuildCleanProfile
+Caching disabled for task ':app:externalNativeBuildCleanProfile' because:
+  Build cache is disabled
+Task ':app:externalNativeBuildCleanProfile' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+C/C++: starting clean
+C/C++: finding existing JSONs
+C/C++: Json file not found so contents couldn't be cleaned C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\.cxx\profile\6t6k1u1k\armeabi-v7a\android_gradle_build.json
+C/C++: Json file not found so contents couldn't be cleaned C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\.cxx\profile\6t6k1u1k\arm64-v8a\android_gradle_build.json
+C/C++: Json file not found so contents couldn't be cleaned C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\.cxx\profile\6t6k1u1k\x86_64\android_gradle_build.json
+C/C++: Json file not found so contents couldn't be cleaned C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\.cxx\profile\6t6k1u1k\riscv64\android_gradle_build.json
+C/C++: Json file not found so contents couldn't be cleaned C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\.cxx\profile\6t6k1u1k\x86\android_gradle_build.json
+C/C++: about to execute 0 clean command batches
+C/C++: clean complete
+Resolve mutations for :app:externalNativeBuildCleanRelease (Thread[#93,Execution worker Thread 8,5,main]) started.
+:app:externalNativeBuildCleanRelease (Thread[#93,Execution worker Thread 8,5,main]) started.
+
+> Task :app:externalNativeBuildCleanRelease
+Caching disabled for task ':app:externalNativeBuildCleanRelease' because:
+  Build cache is disabled
+Task ':app:externalNativeBuildCleanRelease' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+C/C++: starting clean
+C/C++: finding existing JSONs
+C/C++: Json file not found so contents couldn't be cleaned C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\.cxx\release\6q4b3727\armeabi-v7a\android_gradle_build.json
+C/C++: Json file not found so contents couldn't be cleaned C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\.cxx\release\6q4b3727\arm64-v8a\android_gradle_build.json
+C/C++: Json file not found so contents couldn't be cleaned C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\.cxx\release\6q4b3727\x86_64\android_gradle_build.json
+C/C++: Json file not found so contents couldn't be cleaned C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\.cxx\release\6q4b3727\riscv64\android_gradle_build.json
+C/C++: Json file not found so contents couldn't be cleaned C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\.cxx\release\6q4b3727\x86\android_gradle_build.json
+C/C++: about to execute 0 clean command batches
+C/C++: clean complete
+Resolve mutations for :app:clean (Thread[#93,Execution worker Thread 8,5,main]) started.
+:app:clean (Thread[#93,Execution worker Thread 8,5,main]) started.
+
+> Task :app:clean UP-TO-DATE
+Caching disabled for task ':app:clean' because:
+  Build cache is disabled
+Task ':app:clean' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :url_launcher_android:clean (Thread[#93,Execution worker Thread 8,5,main]) started.
+:url_launcher_android:clean (Thread[#93,Execution worker Thread 8,5,main]) started.
+destroyer locations for task group 0 (Thread[#92,Execution worker Thread 7,5,main]) started.
+
+> Task :url_launcher_android:clean UP-TO-DATE
+Caching disabled for task ':url_launcher_android:clean' because:
+  Build cache is disabled
+Task ':url_launcher_android:clean' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :app:DebugMinSdkCheck (Thread[#93,Execution worker Thread 8,5,main]) started.
+:app:DebugMinSdkCheck (Thread[#93,Execution worker Thread 8,5,main]) started.
+
+> Task :app:DebugMinSdkCheck
+Caching disabled for task ':app:DebugMinSdkCheck' because:
+  Build cache is disabled
+Task ':app:DebugMinSdkCheck' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :app:preBuild (Thread[#93,Execution worker Thread 8,5,main]) started.
+:app:preBuild (Thread[#93,Execution worker Thread 8,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preDebugBuild (Thread[#93,Execution worker Thread 8,5,main]) started.
+:app:preDebugBuild (Thread[#93,Execution worker Thread 8,5,main]) started.
+
+> Task :app:preDebugBuild UP-TO-DATE
+Skipping task ':app:preDebugBuild' as it has no actions.
+Resolve mutations for :app:mergeDebugNativeDebugMetadata (Thread[#93,Execution worker Thread 8,5,main]) started.
+:app:mergeDebugNativeDebugMetadata (Thread[#93,Execution worker Thread 8,5,main]) started.
+
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+Skipping task ':app:mergeDebugNativeDebugMetadata' as it has no source files and no previous output files.
+Resolve mutations for :app:checkKotlinGradlePluginConfigurationErrors (Thread[#96,Execution worker Thread 11,5,main]) started.
+:app:checkKotlinGradlePluginConfigurationErrors (Thread[#96,Execution worker Thread 11,5,main]) started.
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+Caching disabled for task ':app:checkKotlinGradlePluginConfigurationErrors' because:
+  Build cache is disabled
+Task ':app:checkKotlinGradlePluginConfigurationErrors' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :app:compileFlutterBuildDebug (Thread[#96,Execution worker Thread 11,5,main]) started.
+:app:compileFlutterBuildDebug (Thread[#96,Execution worker Thread 11,5,main]) started.
+
+> Task :app:compileFlutterBuildDebug
+Caching disabled for task ':app:compileFlutterBuildDebug' because:
+  Build cache is disabled
+Task ':app:compileFlutterBuildDebug' is not up-to-date because:
+  No history is available.
+Starting process 'command 'C:\Users\Kutbay\flutter\bin\flutter.bat''. Working directory: C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson Command: C:\Users\Kutbay\flutter\bin\flutter.bat --quiet assemble --no-version-check --depfile C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\app\intermediates\flutter\debug/flutter_build.d --output C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\app\intermediates\flutter\debug -dTargetFile=lib/main.dart -dTargetPlatform=android -dBuildMode=debug -dTrackWidgetCreation=true -dFlavor= -dAndroidArchs=android-arm android-arm64 android-x64 -dMinSdkVersion=24 debug_android_application
+Successfully started process 'command 'C:\Users\Kutbay\flutter\bin\flutter.bat''
+Invalidating in-memory cache of C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android\.gradle\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android\.gradle\8.5\fileHashes\resourceHashesCache.bin
+Invalidating in-memory cache of C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android\.gradle\8.5\executionHistory\executionHistory.bin
+Invalidating in-memory cache of C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android\.gradle\buildOutputCleanup\outputFiles.bin
+Resolve mutations for :app:packJniLibsflutterBuildDebug (Thread[#96,Execution worker Thread 11,5,main]) started.
+:app:packJniLibsflutterBuildDebug (Thread[#96,Execution worker Thread 11,5,main]) started.
+
+> Task :app:packJniLibsflutterBuildDebug
+Caching disabled for task ':app:packJniLibsflutterBuildDebug' because:
+  Build cache is disabled
+Task ':app:packJniLibsflutterBuildDebug' is not up-to-date because:
+  Input property 'rootSpec$1$3.caseSensitive' has been added for task ':app:packJniLibsflutterBuildDebug'
+  Input property 'rootSpec$1$3.destPath' has been added for task ':app:packJniLibsflutterBuildDebug'
+  Input property 'rootSpec$1$3.dirPermissions' has been added for task ':app:packJniLibsflutterBuildDebug'
+file or directory 'C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\app\intermediates\flutter\debug\armeabi-v7a', not found
+file or directory 'C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\native_assets\android\jniLibs\lib\armeabi-v7a', not found
+file or directory 'C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\app\intermediates\flutter\debug\arm64-v8a', not found
+file or directory 'C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\native_assets\android\jniLibs\lib\arm64-v8a', not found
+file or directory 'C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\app\intermediates\flutter\debug\x86_64', not found
+file or directory 'C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\build\native_assets\android\jniLibs\lib\x86_64', not found
+Resolve mutations for :url_launcher_android:preBuild (Thread[#96,Execution worker Thread 11,5,main]) started.
+:url_launcher_android:preBuild (Thread[#96,Execution worker Thread 11,5,main]) started.
+
+> Task :url_launcher_android:preBuild UP-TO-DATE
+Skipping task ':url_launcher_android:preBuild' as it has no actions.
+Resolve mutations for :url_launcher_android:preDebugBuild (Thread[#96,Execution worker Thread 11,5,main]) started.
+:url_launcher_android:preDebugBuild (Thread[#96,Execution worker Thread 11,5,main]) started.
+
+> Task :url_launcher_android:preDebugBuild UP-TO-DATE
+Skipping task ':url_launcher_android:preDebugBuild' as it has no actions.
+Resolve mutations for :url_launcher_android:writeDebugAarMetadata (Thread[#96,Execution worker Thread 11,5,main]) started.
+:url_launcher_android:writeDebugAarMetadata (Thread[#96,Execution worker Thread 11,5,main]) started.
+
+> Task :url_launcher_android:writeDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':url_launcher_android:writeDebugAarMetadata' because:
+  Build cache is disabled
+Skipping task ':url_launcher_android:writeDebugAarMetadata' as it is up-to-date.
+work action resolve aar-metadata.properties (project :url_launcher_android) (Thread[#96,Execution worker Thread 11,5,main]) started.
+Resolve mutations for :app:checkDebugAarMetadata (Thread[#96,Execution worker Thread 11,5,main]) started.
+:app:checkDebugAarMetadata (Thread[#96,Execution worker Thread 11,5,main]) started.
+Resolve mutations for :app:cleanMergeDebugAssets (Thread[#88,Execution worker Thread 3,5,main]) started.
+:app:cleanMergeDebugAssets (Thread[#88,Execution worker Thread 3,5,main]) started.
+
+> Task :app:cleanMergeDebugAssets UP-TO-DATE
+Caching disabled for task ':app:cleanMergeDebugAssets' because:
+  Build cache is disabled
+Task ':app:cleanMergeDebugAssets' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :app:mergeDebugShaders (Thread[#88,Execution worker Thread 3,5,main]) started.
+:app:mergeDebugShaders (Thread[#88,Execution worker Thread 3,5,main]) started.
+
+> Task :app:mergeDebugShaders UP-TO-DATE
+Caching disabled for task ':app:mergeDebugShaders' because:
+  Build cache is disabled
+Skipping task ':app:mergeDebugShaders' as it is up-to-date.
+Resolve mutations for :app:compileDebugShaders (Thread[#88,Execution worker Thread 3,5,main]) started.
+:app:compileDebugShaders (Thread[#88,Execution worker Thread 3,5,main]) started.
+
+> Task :app:compileDebugShaders NO-SOURCE
+Skipping task ':app:compileDebugShaders' as it has no source files and no previous output files.
+Resolve mutations for :app:generateDebugAssets (Thread[#88,Execution worker Thread 3,5,main]) started.
+:app:generateDebugAssets (Thread[#88,Execution worker Thread 3,5,main]) started.
+
+> Task :app:generateDebugAssets UP-TO-DATE
+Skipping task ':app:generateDebugAssets' as it has no actions.
+Resolve mutations for :url_launcher_android:mergeDebugShaders (Thread[#88,Execution worker Thread 3,5,main]) started.
+:url_launcher_android:mergeDebugShaders (Thread[#88,Execution worker Thread 3,5,main]) started.
+
+> Task :url_launcher_android:mergeDebugShaders UP-TO-DATE
+Caching disabled for task ':url_launcher_android:mergeDebugShaders' because:
+  Build cache is disabled
+Skipping task ':url_launcher_android:mergeDebugShaders' as it is up-to-date.
+Resolve mutations for :url_launcher_android:compileDebugShaders (Thread[#87,Execution worker Thread 2,5,main]) started.
+:url_launcher_android:compileDebugShaders (Thread[#87,Execution worker Thread 2,5,main]) started.
+
+> Task :url_launcher_android:compileDebugShaders NO-SOURCE
+Skipping task ':url_launcher_android:compileDebugShaders' as it has no source files and no previous output files.
+Resolve mutations for :url_launcher_android:generateDebugAssets (Thread[#87,Execution worker Thread 2,5,main]) started.
+:url_launcher_android:generateDebugAssets (Thread[#87,Execution worker Thread 2,5,main]) started.
+
+> Task :url_launcher_android:generateDebugAssets UP-TO-DATE
+Skipping task ':url_launcher_android:generateDebugAssets' as it has no actions.
+Resolve mutations for :url_launcher_android:packageDebugAssets (Thread[#87,Execution worker Thread 2,5,main]) started.
+:url_launcher_android:packageDebugAssets (Thread[#87,Execution worker Thread 2,5,main]) started.
+
+> Task :url_launcher_android:packageDebugAssets UP-TO-DATE
+Caching disabled for task ':url_launcher_android:packageDebugAssets' because:
+  Build cache is disabled
+Skipping task ':url_launcher_android:packageDebugAssets' as it is up-to-date.
+work action resolve out (project :url_launcher_android) (Thread[#87,Execution worker Thread 2,5,main]) started.
+Resolve mutations for :app:mergeDebugAssets (Thread[#87,Execution worker Thread 2,5,main]) started.
+
+> Task :app:checkDebugAarMetadata FAILED
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/io/flutter/arm64_v8a_debug/1.0.0-3452d735bd38224ef2db85ca763d862d6326b17f/arm64_v8a_debug-1.0.0-3452d735bd38224ef2db85ca763d862d6326b17f.pom]
+Resource missing. [HTTP GET: https://dl.google.com/dl/android/maven2/io/flutter/armeabi_v7a_debug/1.0.0-3452d735bd38224ef2db85ca763d862d6326b17f/armeabi_v7a_debug-1.0.0-3452d735bd38224ef2db85ca763d862d6326b17f.pom]
+Resource missing. [HTTP GET: https://repo.maven.apache.org/maven2/io/flutter/arm64_v8a_debug/1.0.0-3452d735bd38224ef2db85ca763d862d6326b17f/arm64_v8a_debug-1.0.0-3452d735bd38224ef2db85ca763d862d6326b17f.pom]
+Resource missing. [HTTP GET: https://repo.maven.apache.org/maven2/io/flutter/armeabi_v7a_debug/1.0.0-3452d735bd38224ef2db85ca763d862d6326b17f/armeabi_v7a_debug-1.0.0-3452d735bd38224ef2db85ca763d862d6326b17f.pom]
+Downloading https://storage.googleapis.com/download.flutter.io/io/flutter/arm64_v8a_debug/1.0.0-3452d735bd38224ef2db85ca763d862d6326b17f/arm64_v8a_debug-1.0.0-3452d735bd38224ef2db85ca763d862d6326b17f.pom to C:\Users\Kutbay\.gradle\.tmp\gradle_download82537067418007887bin
+Invalidating in-memory cache of C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android\.gradle\8.5\checksums\md5-checksums.bin
+Invalidating in-memory cache of C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android\.gradle\8.5\checksums\sha256-checksums.bin
+Invalidating in-memory cache of C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android\.gradle\8.5\checksums\sha1-checksums.bin
+Invalidating in-memory cache of C:\Users\Kutbay\Desktop\TNC\Projeler\Mobil\myson\android\.gradle\8.5\checksums\sha512-checksums.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\journal-1\file-access.bin
+Downloading https://storage.googleapis.com/download.flutter.io/io/flutter/armeabi_v7a_debug/1.0.0-3452d735bd38224ef2db85ca763d862d6326b17f/armeabi_v7a_debug-1.0.0-3452d735bd38224ef2db85ca763d862d6326b17f.pom to C:\Users\Kutbay\.gradle\.tmp\gradle_download7728809484836494722bin
+Transforming browser-1.9.0.aar (androidx.browser:browser:1.9.0) with ExtractAarTransform
+Transforming lifecycle-livedata-core-ktx-2.7.0.aar (androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0) with ExtractAarTransform
+Transforming window-1.2.0.aar (androidx.window:window:1.2.0) with ExtractAarTransform
+Transforming window-java-1.2.0.aar (androidx.window:window-java:1.2.0) with ExtractAarTransform
+Transforming lifecycle-livedata-2.7.0.aar (androidx.lifecycle:lifecycle-livedata:2.7.0) with ExtractAarTransform
+Transforming fragment-1.7.1.aar (androidx.fragment:fragment:1.7.1) with ExtractAarTransform
+Transforming lifecycle-livedata-core-2.7.0.aar (androidx.lifecycle:lifecycle-livedata-core:2.7.0) with ExtractAarTransform
+Transforming lifecycle-viewmodel-2.7.0.aar (androidx.lifecycle:lifecycle-viewmodel:2.7.0) with ExtractAarTransform
+Transforming activity-1.9.0.aar (androidx.activity:activity:1.9.0) with ExtractAarTransform
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with ExtractAarTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with ExtractAarTransform
+Transforming lifecycle-viewmodel-2.7.0.aar (androidx.lifecycle:lifecycle-viewmodel:2.7.0) with ExtractAarTransform
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\fileHashes\resourceHashesCache.bin
+Invalidating in-memory cache of C:\Users\Kutbay\.gradle\caches\8.5\executionHistory\executionHistory.bin
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.loader\loader\1.0.0\8af8b6cec0da85c207d03e15840e0722cbc71e70\loader-1.0.0.aar because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.loader\loader\1.0.0\8af8b6cec0da85c207d03e15840e0722cbc71e70\loader-1.0.0.aar as it is up-to-date.
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.viewpager\viewpager\1.0.0\1f90e13820f96c2fb868f9674079a551678d68b2\viewpager-1.0.0.aar because:
+  Build cache is disabled
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-livedata-core\2.7.0\d95c9c0b74a6b9882c416c688f6cf201dc416bed\lifecycle-livedata-core-2.7.0.aar because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.viewpager\viewpager\1.0.0\1f90e13820f96c2fb868f9674079a551678d68b2\viewpager-1.0.0.aar as it is up-to-date.
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-livedata-core\2.7.0\d95c9c0b74a6b9882c416c688f6cf201dc416bed\lifecycle-livedata-core-2.7.0.aar as it is up-to-date.
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with AarTransform
+Transforming lifecycle-livedata-core-2.7.0.aar (androidx.lifecycle:lifecycle-livedata-core:2.7.0) with AarTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-livedata-core-ktx\2.7.0\746c75e5d0a819d11e255ad137083a51c746e953\lifecycle-livedata-core-ktx-2.7.0.aar because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-livedata-core-ktx\2.7.0\746c75e5d0a819d11e255ad137083a51c746e953\lifecycle-livedata-core-ktx-2.7.0.aar as it is up-to-date.
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.activity\activity\1.9.0\f555772773dbe054d7e5306bc490068ef1ba409e\activity-1.9.0.aar because:
+  Build cache is disabled
+Transforming lifecycle-livedata-core-ktx-2.7.0.aar (androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0) with AarTransform
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.activity\activity\1.9.0\f555772773dbe054d7e5306bc490068ef1ba409e\activity-1.9.0.aar as it is up-to-date.
+Transforming activity-1.9.0.aar (androidx.activity:activity:1.9.0) with AarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\cbed9a5287b340cf34e0c8eac130fb0e\transformed\lifecycle-livedata-core-2.7.0 because:
+  Build cache is disabled
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-livedata\2.7.0\42ad14e1ee00719636e31a36e8cd50d7ce5c45c6\lifecycle-livedata-2.7.0.aar because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\cbed9a5287b340cf34e0c8eac130fb0e\transformed\lifecycle-livedata-core-2.7.0 as it is up-to-date.
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-livedata\2.7.0\42ad14e1ee00719636e31a36e8cd50d7ce5c45c6\lifecycle-livedata-2.7.0.aar as it is up-to-date.
+Transforming lifecycle-livedata-2.7.0.aar (androidx.lifecycle:lifecycle-livedata:2.7.0) with AarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\8798428b381f16bf370717da33077907\transformed\viewpager-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\8798428b381f16bf370717da33077907\transformed\viewpager-1.0.0 as it is up-to-date.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\c548c42e8e2d9355bf7f9038a225bf3f\transformed\loader-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\c548c42e8e2d9355bf7f9038a225bf3f\transformed\loader-1.0.0 as it is up-to-date.
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.fragment\fragment\1.7.1\c7d4fcacda7c02f3b29e4d232f5f21cfa6aa7451\fragment-1.7.1.aar because:
+  Build cache is disabled
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.window\window-java\1.2.0\924d0a3ca93fac4acb32c6a972e9fa1e283f1f07\window-java-1.2.0.aar because:
+  Build cache is disabled
+Transforming savedstate-1.2.1.aar (androidx.savedstate:savedstate:1.2.1) with ExtractAarTransform
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.fragment\fragment\1.7.1\c7d4fcacda7c02f3b29e4d232f5f21cfa6aa7451\fragment-1.7.1.aar as it is up-to-date.
+Transforming lifecycle-process-2.7.0.aar (androidx.lifecycle:lifecycle-process:2.7.0) with ExtractAarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\bc18bfc601297d8f7e5d48303f8470b2\transformed\activity-1.9.0 because:
+  Build cache is disabled
+Transforming lifecycle-runtime-2.7.0.aar (androidx.lifecycle:lifecycle-runtime:2.7.0) with ExtractAarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\0f8f241610f58d01877689c339525c4c\transformed\lifecycle-livedata-2.7.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\bc18bfc601297d8f7e5d48303f8470b2\transformed\activity-1.9.0 as it is up-to-date.
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\0f8f241610f58d01877689c339525c4c\transformed\lifecycle-livedata-2.7.0 as it is up-to-date.
+Transforming fragment-1.7.1.aar (androidx.fragment:fragment:1.7.1) with AarTransform
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-viewmodel\2.7.0\ea64fb2e504d200f2b7f03c76f51edd7e9ef62a9\lifecycle-viewmodel-2.7.0.aar because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-viewmodel\2.7.0\ea64fb2e504d200f2b7f03c76f51edd7e9ef62a9\lifecycle-viewmodel-2.7.0.aar as it is up-to-date.
+Transforming lifecycle-viewmodel-savedstate-2.7.0.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0) with ExtractAarTransform
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.window\window-java\1.2.0\924d0a3ca93fac4acb32c6a972e9fa1e283f1f07\window-java-1.2.0.aar as it is up-to-date.
+Transforming lifecycle-viewmodel-2.7.0.aar (androidx.lifecycle:lifecycle-viewmodel:2.7.0) with AarTransform
+Transforming window-java-1.2.0.aar (androidx.window:window-java:1.2.0) with AarTransform
+Transforming core-ktx-1.17.0.aar (androidx.core:core-ktx:1.17.0) with ExtractAarTransform
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.window\window\1.2.0\1d080d0a72684227bf6eb9af56264542708f8d16\window-1.2.0.aar because:
+  Build cache is disabled
+Transforming lifecycle-viewmodel-2.7.0.aar (androidx.lifecycle:lifecycle-viewmodel:2.7.0) with AarTransform
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.window\window\1.2.0\1d080d0a72684227bf6eb9af56264542708f8d16\window-1.2.0.aar as it is up-to-date.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\79c43d1ebf4a8e0a5ca10274102d0a1f\transformed\window-java-1.2.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\79c43d1ebf4a8e0a5ca10274102d0a1f\transformed\window-java-1.2.0 as it is up-to-date.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\8615439400a18f026b348f325020ee04\transformed\fragment-1.7.1 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\8615439400a18f026b348f325020ee04\transformed\fragment-1.7.1 as it is up-to-date.
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Transforming window-1.2.0.aar (androidx.window:window:1.2.0) with AarTransform
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-process\2.7.0\10fc9ecc045a9931724c43e710c55680a772d96a\lifecycle-process-2.7.0.aar because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-process\2.7.0\10fc9ecc045a9931724c43e710c55680a772d96a\lifecycle-process-2.7.0.aar as it is up-to-date.
+Transforming lifecycle-process-2.7.0.aar (androidx.lifecycle:lifecycle-process:2.7.0) with AarTransform
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-runtime\2.7.0\e46d7c73ab6cb3e288f51a0ad96bf372e90ceb31\lifecycle-runtime-2.7.0.aar because:
+  Build cache is disabled
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.savedstate\savedstate\1.2.1\e364fc9dec32aa569d855f85864e50250318a093\savedstate-1.2.1.aar because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.savedstate\savedstate\1.2.1\e364fc9dec32aa569d855f85864e50250318a093\savedstate-1.2.1.aar as it is up-to-date.
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.core\core-ktx\1.17.0\77d65388760e55bd6336907eec271607afb6c62f\core-ktx-1.17.0.aar because:
+  Build cache is disabled
+Transforming savedstate-1.2.1.aar (androidx.savedstate:savedstate:1.2.1) with AarTransform
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.core\core-ktx\1.17.0\77d65388760e55bd6336907eec271607afb6c62f\core-ktx-1.17.0.aar as it is up-to-date.
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-runtime\2.7.0\e46d7c73ab6cb3e288f51a0ad96bf372e90ceb31\lifecycle-runtime-2.7.0.aar as it is up-to-date.
+Transforming core-ktx-1.17.0.aar (androidx.core:core-ktx:1.17.0) with AarTransform
+Transforming lifecycle-runtime-2.7.0.aar (androidx.lifecycle:lifecycle-runtime:2.7.0) with AarTransform
+Transforming core-1.17.0.aar (androidx.core:core:1.17.0) with ExtractAarTransform
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-viewmodel-savedstate\2.7.0\1fa14bde5efb3a96fa4fb8ced995f7fdfe99dfd\lifecycle-viewmodel-savedstate-2.7.0.aar because:
+  Build cache is disabled
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\286ed5f4e9820cffb7f8e239ad19a552\transformed\lifecycle-process-2.7.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\286ed5f4e9820cffb7f8e239ad19a552\transformed\lifecycle-process-2.7.0 as it is up-to-date.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\5a379dfa0cd32a5b1431fb887a20db51\transformed\window-1.2.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\5a379dfa0cd32a5b1431fb887a20db51\transformed\window-1.2.0 as it is up-to-date.
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.customview\customview\1.0.0\30f5ff6075d112f8076e733b24410e68159735b6\customview-1.0.0.aar because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-viewmodel-savedstate\2.7.0\1fa14bde5efb3a96fa4fb8ced995f7fdfe99dfd\lifecycle-viewmodel-savedstate-2.7.0.aar as it is up-to-date.
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.customview\customview\1.0.0\30f5ff6075d112f8076e733b24410e68159735b6\customview-1.0.0.aar as it is up-to-date.
+Transforming core-1.17.0.aar (androidx.core:core:1.17.0) with ExtractAarTransform
+Transforming lifecycle-viewmodel-savedstate-2.7.0.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0) with AarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\703c03300c6482666460370221657476\transformed\lifecycle-runtime-2.7.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\703c03300c6482666460370221657476\transformed\lifecycle-runtime-2.7.0 as it is up-to-date.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\008d1678148c06889688a40ff78476bd\transformed\savedstate-1.2.1 because:
+  Build cache is disabled
+Transforming core-1.17.0.aar (androidx.core:core:1.17.0) with ExtractAarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\5613b629162c9b5071e23ff01baf2824\transformed\lifecycle-viewmodel-2.7.0 because:
+  Build cache is disabled
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\c47353865f1070f07551dbef76fbe6dd\transformed\core-ktx-1.17.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\5613b629162c9b5071e23ff01baf2824\transformed\lifecycle-viewmodel-2.7.0 as it is up-to-date.
+Transforming core-1.17.0.aar (androidx.core:core:1.17.0) with ExtractAarTransform
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\008d1678148c06889688a40ff78476bd\transformed\savedstate-1.2.1 as it is up-to-date.
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\c47353865f1070f07551dbef76fbe6dd\transformed\core-ktx-1.17.0 as it is up-to-date.
+Transforming annotation-experimental-1.4.1.aar (androidx.annotation:annotation-experimental:1.4.1) with ExtractAarTransform
+Transforming core-viewtree-1.0.0.aar (androidx.core:core-viewtree:1.0.0) with ExtractAarTransform
+Transforming profileinstaller-1.3.1.aar (androidx.profileinstaller:profileinstaller:1.3.1) with ExtractAarTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with ExtractAarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\4a03af3b665e97e1d51a8444bf3e45b1\transformed\customview-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\4a03af3b665e97e1d51a8444bf3e45b1\transformed\customview-1.0.0 as it is up-to-date.
+Transforming tracing-1.2.0.aar (androidx.tracing:tracing:1.2.0) with ExtractAarTransform
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.core\core-viewtree\1.0.0\449ba4f495b4d10d18edd01f32f9328be40d5749\core-viewtree-1.0.0.aar because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.core\core-viewtree\1.0.0\449ba4f495b4d10d18edd01f32f9328be40d5749\core-viewtree-1.0.0.aar as it is up-to-date.
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.startup\startup-runtime\1.1.1\9d4ba67056aff98b69eadc1477c19a1e67cb9470\startup-runtime-1.1.1.aar because:
+  Build cache is disabled
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\53b327fcad442d5c6af7bfd7d7a9e9ba\transformed\lifecycle-viewmodel-savedstate-2.7.0 because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.startup\startup-runtime\1.1.1\9d4ba67056aff98b69eadc1477c19a1e67cb9470\startup-runtime-1.1.1.aar as it is up-to-date.
+Transforming core-viewtree-1.0.0.aar (androidx.core:core-viewtree:1.0.0) with AarTransform
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.profileinstaller\profileinstaller\1.3.1\c0bac819b4f88a648011542273373d1e5093e3a7\profileinstaller-1.3.1.aar because:
+  Build cache is disabled
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with AarTransform
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\53b327fcad442d5c6af7bfd7d7a9e9ba\transformed\lifecycle-viewmodel-savedstate-2.7.0 as it is up-to-date.
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.profileinstaller\profileinstaller\1.3.1\c0bac819b4f88a648011542273373d1e5093e3a7\profileinstaller-1.3.1.aar as it is up-to-date.
+Transforming profileinstaller-1.3.1.aar (androidx.profileinstaller:profileinstaller:1.3.1) with AarTransform
+Transforming exifinterface-1.4.1.aar (androidx.exifinterface:exifinterface:1.4.1) with ExtractAarTransform
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.tracing\tracing\1.2.0\a6ac2cc501278fdc99c56b428548e0cd1e9300f7\tracing-1.2.0.aar because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.tracing\tracing\1.2.0\a6ac2cc501278fdc99c56b428548e0cd1e9300f7\tracing-1.2.0.aar as it is up-to-date.
+Transforming tracing-1.2.0.aar (androidx.tracing:tracing:1.2.0) with AarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\eafe035b0b9b295ab393b5b96460ec99\transformed\startup-runtime-1.1.1 because:
+  Build cache is disabled
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\7fb94d897c9e9c8273e2f25e20ab05e6\transformed\profileinstaller-1.3.1 because:
+  Build cache is disabled
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\1ec462a092777036133224604ae1b395\transformed\core-viewtree-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\7fb94d897c9e9c8273e2f25e20ab05e6\transformed\profileinstaller-1.3.1 as it is up-to-date.
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\1ec462a092777036133224604ae1b395\transformed\core-viewtree-1.0.0 as it is up-to-date.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\2b04165329e88cf9767a9579b498571a\transformed\tracing-1.2.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\2b04165329e88cf9767a9579b498571a\transformed\tracing-1.2.0 as it is up-to-date.
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\eafe035b0b9b295ab393b5b96460ec99\transformed\startup-runtime-1.1.1 as it is up-to-date.
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with ExtractAarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+Transforming core-runtime-2.2.0.aar (androidx.arch.core:core-runtime:2.2.0) with ExtractAarTransform
+Transforming core-1.0.0.aar (androidx.window.extensions.core:core:1.0.0) with ExtractAarTransform
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.interpolator\interpolator\1.0.0\8a01fa254a23b9388571eb6334b03707c7d122d7\interpolator-1.0.0.aar because:
+  Build cache is disabled
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.exifinterface\exifinterface\1.4.1\d8336b7d7dfd354f334dd21372db9e9e2da2fd81\exifinterface-1.4.1.aar because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.exifinterface\exifinterface\1.4.1\d8336b7d7dfd354f334dd21372db9e9e2da2fd81\exifinterface-1.4.1.aar as it is up-to-date.
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.interpolator\interpolator\1.0.0\8a01fa254a23b9388571eb6334b03707c7d122d7\interpolator-1.0.0.aar as it is up-to-date.
+Transforming exifinterface-1.4.1.aar (androidx.exifinterface:exifinterface:1.4.1) with AarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\59166db072f711a50a6c3f32c8cd08da\transformed\interpolator-1.0.0 because:
+  Build cache is disabled
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\711735ac19229c940a6efd496ef54e23\transformed\exifinterface-1.4.1 because:
+  Build cache is disabled
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.arch.core\core-runtime\2.2.0\39705982680d78556b679ef9d5400d4f17509b0b\core-runtime-2.2.0.aar because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\711735ac19229c940a6efd496ef54e23\transformed\exifinterface-1.4.1 as it is up-to-date.
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\59166db072f711a50a6c3f32c8cd08da\transformed\interpolator-1.0.0 as it is up-to-date.
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.arch.core\core-runtime\2.2.0\39705982680d78556b679ef9d5400d4f17509b0b\core-runtime-2.2.0.aar as it is up-to-date.
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.versionedparcelable\versionedparcelable\1.1.1\18e18071e7715679e0593c570217edeb5ca48b9e\versionedparcelable-1.1.1.aar because:
+  Build cache is disabled
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.window.extensions.core\core\1.0.0\f755f474ef8f4ff78ba7f6cbd8146ab6a383a557\core-1.0.0.aar because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.versionedparcelable\versionedparcelable\1.1.1\18e18071e7715679e0593c570217edeb5ca48b9e\versionedparcelable-1.1.1.aar as it is up-to-date.
+Transforming relinker-1.4.5.aar (com.getkeepsafe.relinker:relinker:1.4.5) with ExtractAarTransform
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.window.extensions.core\core\1.0.0\f755f474ef8f4ff78ba7f6cbd8146ab6a383a557\core-1.0.0.aar as it is up-to-date.
+Transforming core-runtime-2.2.0.aar (androidx.arch.core:core-runtime:2.2.0) with AarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with AarTransform
+Transforming core-1.0.0.aar (androidx.window.extensions.core:core:1.0.0) with AarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\ab274f80fb4d24090e0be9ee5f08ab0c\transformed\versionedparcelable-1.1.1 because:
+  Build cache is disabled
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\b032d9c16f81dc97149e4375eb5dbbe5\transformed\core-runtime-2.2.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\ab274f80fb4d24090e0be9ee5f08ab0c\transformed\versionedparcelable-1.1.1 as it is up-to-date.
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\b032d9c16f81dc97149e4375eb5dbbe5\transformed\core-runtime-2.2.0 as it is up-to-date.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\28d2b659f008bb2edcc2cd5f3b2ea8c2\transformed\core-1.0.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\28d2b659f008bb2edcc2cd5f3b2ea8c2\transformed\core-1.0.0 as it is up-to-date.
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.getkeepsafe.relinker\relinker\1.4.5\222d7b0624248da9336bbfccff8a129e3e280ce8\relinker-1.4.5.aar because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\com.getkeepsafe.relinker\relinker\1.4.5\222d7b0624248da9336bbfccff8a129e3e280ce8\relinker-1.4.5.aar as it is up-to-date.
+Transforming relinker-1.4.5.aar (com.getkeepsafe.relinker:relinker:1.4.5) with AarTransform
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.browser\browser\1.9.0\b77d79550d151cc7b58b07856c88ea62dd9d52ca\browser-1.9.0.aar because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.browser\browser\1.9.0\b77d79550d151cc7b58b07856c88ea62dd9d52ca\browser-1.9.0.aar as it is up-to-date.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\beac161d94839cbc589a5692831acdf3\transformed\lifecycle-livedata-core-ktx-2.7.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\beac161d94839cbc589a5692831acdf3\transformed\lifecycle-livedata-core-ktx-2.7.0 as it is up-to-date.
+Transforming browser-1.9.0.aar (androidx.browser:browser:1.9.0) with AarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\2ed74eb25bc925a4b94b349595d724cb\transformed\relinker-1.4.5 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\2ed74eb25bc925a4b94b349595d724cb\transformed\relinker-1.4.5 as it is up-to-date.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\d0969fd8af401e534aca58cdfe274c5f\transformed\browser-1.9.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\d0969fd8af401e534aca58cdfe274c5f\transformed\browser-1.9.0 as it is up-to-date.
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.core\core\1.17.0\1eb461d3499f5bb832dd45edd3982471a11a3f95\core-1.17.0.aar because:
+  Build cache is disabled
+Caching disabled for ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.annotation\annotation-experimental\1.4.1\7851235e2a16ce50270a74b555edaf9209b42864\annotation-experimental-1.4.1.aar because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.core\core\1.17.0\1eb461d3499f5bb832dd45edd3982471a11a3f95\core-1.17.0.aar as it is up-to-date.
+Skipping ExtractAarTransform: C:\Users\Kutbay\.gradle\caches\modules-2\files-2.1\androidx.annotation\annotation-experimental\1.4.1\7851235e2a16ce50270a74b555edaf9209b42864\annotation-experimental-1.4.1.aar as it is up-to-date.
+Transforming core-1.17.0.aar (androidx.core:core:1.17.0) with AarTransform
+Transforming core-1.17.0.aar (androidx.core:core:1.17.0) with AarTransform
+Transforming core-1.17.0.aar (androidx.core:core:1.17.0) with AarTransform
+Transforming core-1.17.0.aar (androidx.core:core:1.17.0) with AarTransform
+Transforming annotation-experimental-1.4.1.aar (androidx.annotation:annotation-experimental:1.4.1) with AarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\5fbf0321ae55ad2880ebe0027ac615f5\transformed\core-1.17.0 because:
+  Build cache is disabled
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\6a4ed815267feeddffda520575242a8c\transformed\annotation-experimental-1.4.1 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\5fbf0321ae55ad2880ebe0027ac615f5\transformed\core-1.17.0 as it is up-to-date.
+Skipping AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\6a4ed815267feeddffda520575242a8c\transformed\annotation-experimental-1.4.1 as it is up-to-date.
+Caching disabled for task ':app:checkDebugAarMetadata' because:
+  Build cache is disabled
+Task ':app:checkDebugAarMetadata' is not up-to-date because:
+  Task has failed previously.
+:app:mergeDebugAssets (Thread[#87,Execution worker Thread 2,5,main]) started.
+
+> Task :app:mergeDebugAssets
+Transforming browser-1.9.0.aar (androidx.browser:browser:1.9.0) with ExtractAarTransform
+Transforming browser-1.9.0.aar (androidx.browser:browser:1.9.0) with AarTransform
+Transforming window-1.2.0.aar (androidx.window:window:1.2.0) with ExtractAarTransform
+Transforming window-1.2.0.aar (androidx.window:window:1.2.0) with AarTransform
+Transforming window-java-1.2.0.aar (androidx.window:window-java:1.2.0) with ExtractAarTransform
+Transforming window-java-1.2.0.aar (androidx.window:window-java:1.2.0) with AarTransform
+Transforming fragment-1.7.1.aar (androidx.fragment:fragment:1.7.1) with ExtractAarTransform
+Transforming fragment-1.7.1.aar (androidx.fragment:fragment:1.7.1) with AarTransform
+Transforming activity-1.9.0.aar (androidx.activity:activity:1.9.0) with ExtractAarTransform
+Transforming activity-1.9.0.aar (androidx.activity:activity:1.9.0) with AarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\5a379dfa0cd32a5b1431fb887a20db51\transformed\window-1.2.0 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\5a379dfa0cd32a5b1431fb887a20db51\transformed\window-1.2.0 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\79c43d1ebf4a8e0a5ca10274102d0a1f\transformed\window-java-1.2.0 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\79c43d1ebf4a8e0a5ca10274102d0a1f\transformed\window-java-1.2.0 is not up-to-date because:
+  No history is available.
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with ExtractAarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\8615439400a18f026b348f325020ee04\transformed\fragment-1.7.1 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\8615439400a18f026b348f325020ee04\transformed\fragment-1.7.1 is not up-to-date because:
+  No history is available.
+Transforming loader-1.0.0.aar (androidx.loader:loader:1.0.0) with AarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\d0969fd8af401e534aca58cdfe274c5f\transformed\browser-1.9.0 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\d0969fd8af401e534aca58cdfe274c5f\transformed\browser-1.9.0 is not up-to-date because:
+  No history is available.
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with ExtractAarTransform
+Transforming viewpager-1.0.0.aar (androidx.viewpager:viewpager:1.0.0) with AarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\c548c42e8e2d9355bf7f9038a225bf3f\transformed\loader-1.0.0 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\c548c42e8e2d9355bf7f9038a225bf3f\transformed\loader-1.0.0 is not up-to-date because:
+  No history is available.
+Transforming lifecycle-livedata-core-ktx-2.7.0.aar (androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0) with ExtractAarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\bc18bfc601297d8f7e5d48303f8470b2\transformed\activity-1.9.0 because:
+  Build cache is disabled
+Transforming lifecycle-livedata-core-ktx-2.7.0.aar (androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0) with AarTransform
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\bc18bfc601297d8f7e5d48303f8470b2\transformed\activity-1.9.0 is not up-to-date because:
+  No history is available.
+Transforming lifecycle-livedata-2.7.0.aar (androidx.lifecycle:lifecycle-livedata:2.7.0) with ExtractAarTransform
+Transforming lifecycle-livedata-2.7.0.aar (androidx.lifecycle:lifecycle-livedata:2.7.0) with AarTransform
+Transforming lifecycle-viewmodel-2.7.0.aar (androidx.lifecycle:lifecycle-viewmodel:2.7.0) with ExtractAarTransform
+Transforming lifecycle-viewmodel-2.7.0.aar (androidx.lifecycle:lifecycle-viewmodel:2.7.0) with AarTransform
+Transforming lifecycle-viewmodel-2.7.0.aar (androidx.lifecycle:lifecycle-viewmodel:2.7.0) with ExtractAarTransform
+Transforming lifecycle-viewmodel-2.7.0.aar (androidx.lifecycle:lifecycle-viewmodel:2.7.0) with AarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\8798428b381f16bf370717da33077907\transformed\viewpager-1.0.0 because:
+  Build cache is disabled
+Transforming lifecycle-livedata-core-2.7.0.aar (androidx.lifecycle:lifecycle-livedata-core:2.7.0) with ExtractAarTransform
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\8798428b381f16bf370717da33077907\transformed\viewpager-1.0.0 is not up-to-date because:
+  No history is available.
+Transforming lifecycle-livedata-core-2.7.0.aar (androidx.lifecycle:lifecycle-livedata-core:2.7.0) with AarTransform
+Transforming lifecycle-process-2.7.0.aar (androidx.lifecycle:lifecycle-process:2.7.0) with ExtractAarTransform
+Transforming lifecycle-process-2.7.0.aar (androidx.lifecycle:lifecycle-process:2.7.0) with AarTransform
+Transforming savedstate-1.2.1.aar (androidx.savedstate:savedstate:1.2.1) with ExtractAarTransform
+Transforming savedstate-1.2.1.aar (androidx.savedstate:savedstate:1.2.1) with AarTransform
+Transforming lifecycle-runtime-2.7.0.aar (androidx.lifecycle:lifecycle-runtime:2.7.0) with ExtractAarTransform
+Transforming lifecycle-runtime-2.7.0.aar (androidx.lifecycle:lifecycle-runtime:2.7.0) with AarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\beac161d94839cbc589a5692831acdf3\transformed\lifecycle-livedata-core-ktx-2.7.0 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\beac161d94839cbc589a5692831acdf3\transformed\lifecycle-livedata-core-ktx-2.7.0 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\0f8f241610f58d01877689c339525c4c\transformed\lifecycle-livedata-2.7.0 because:
+  Build cache is disabled
+Transforming lifecycle-viewmodel-savedstate-2.7.0.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0) with ExtractAarTransform
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\0f8f241610f58d01877689c339525c4c\transformed\lifecycle-livedata-2.7.0 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\5613b629162c9b5071e23ff01baf2824\transformed\lifecycle-viewmodel-2.7.0 because:
+  Build cache is disabled
+Transforming lifecycle-viewmodel-savedstate-2.7.0.aar (androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0) with AarTransform
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\5613b629162c9b5071e23ff01baf2824\transformed\lifecycle-viewmodel-2.7.0 is not up-to-date because:
+  No history is available.
+Transforming core-ktx-1.17.0.aar (androidx.core:core-ktx:1.17.0) with ExtractAarTransform
+Transforming core-ktx-1.17.0.aar (androidx.core:core-ktx:1.17.0) with AarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with ExtractAarTransform
+Transforming customview-1.0.0.aar (androidx.customview:customview:1.0.0) with AarTransform
+Transforming core-1.17.0.aar (androidx.core:core:1.17.0) with ExtractAarTransform
+Transforming core-1.17.0.aar (androidx.core:core:1.17.0) with AarTransform
+Transforming core-1.17.0.aar (androidx.core:core:1.17.0) with ExtractAarTransform
+Transforming core-1.17.0.aar (androidx.core:core:1.17.0) with AarTransform
+Transforming core-1.17.0.aar (androidx.core:core:1.17.0) with ExtractAarTransform
+Transforming core-1.17.0.aar (androidx.core:core:1.17.0) with AarTransform
+Transforming core-1.17.0.aar (androidx.core:core:1.17.0) with ExtractAarTransform
+Transforming core-1.17.0.aar (androidx.core:core:1.17.0) with AarTransform
+Transforming annotation-experimental-1.4.1.aar (androidx.annotation:annotation-experimental:1.4.1) with ExtractAarTransform
+Transforming annotation-experimental-1.4.1.aar (androidx.annotation:annotation-experimental:1.4.1) with AarTransform
+Transforming core-viewtree-1.0.0.aar (androidx.core:core-viewtree:1.0.0) with ExtractAarTransform
+Transforming core-viewtree-1.0.0.aar (androidx.core:core-viewtree:1.0.0) with AarTransform
+Transforming profileinstaller-1.3.1.aar (androidx.profileinstaller:profileinstaller:1.3.1) with ExtractAarTransform
+Transforming profileinstaller-1.3.1.aar (androidx.profileinstaller:profileinstaller:1.3.1) with AarTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with ExtractAarTransform
+Transforming startup-runtime-1.1.1.aar (androidx.startup:startup-runtime:1.1.1) with AarTransform
+Transforming tracing-1.2.0.aar (androidx.tracing:tracing:1.2.0) with ExtractAarTransform
+Transforming tracing-1.2.0.aar (androidx.tracing:tracing:1.2.0) with AarTransform
+Transforming exifinterface-1.4.1.aar (androidx.exifinterface:exifinterface:1.4.1) with ExtractAarTransform
+Transforming exifinterface-1.4.1.aar (androidx.exifinterface:exifinterface:1.4.1) with AarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+Transforming interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with ExtractAarTransform
+Transforming versionedparcelable-1.1.1.aar (androidx.versionedparcelable:versionedparcelable:1.1.1) with AarTransform
+Transforming core-runtime-2.2.0.aar (androidx.arch.core:core-runtime:2.2.0) with ExtractAarTransform
+Transforming core-runtime-2.2.0.aar (androidx.arch.core:core-runtime:2.2.0) with AarTransform
+Transforming core-1.0.0.aar (androidx.window.extensions.core:core:1.0.0) with ExtractAarTransform
+Transforming core-1.0.0.aar (androidx.window.extensions.core:core:1.0.0) with AarTransform
+Transforming relinker-1.4.5.aar (com.getkeepsafe.relinker:relinker:1.4.5) with ExtractAarTransform
+Transforming relinker-1.4.5.aar (com.getkeepsafe.relinker:relinker:1.4.5) with AarTransform
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\cbed9a5287b340cf34e0c8eac130fb0e\transformed\lifecycle-livedata-core-2.7.0 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\cbed9a5287b340cf34e0c8eac130fb0e\transformed\lifecycle-livedata-core-2.7.0 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\286ed5f4e9820cffb7f8e239ad19a552\transformed\lifecycle-process-2.7.0 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\286ed5f4e9820cffb7f8e239ad19a552\transformed\lifecycle-process-2.7.0 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\53b327fcad442d5c6af7bfd7d7a9e9ba\transformed\lifecycle-viewmodel-savedstate-2.7.0 because:
+  Build cache is disabled
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\c47353865f1070f07551dbef76fbe6dd\transformed\core-ktx-1.17.0 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\53b327fcad442d5c6af7bfd7d7a9e9ba\transformed\lifecycle-viewmodel-savedstate-2.7.0 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\703c03300c6482666460370221657476\transformed\lifecycle-runtime-2.7.0 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\703c03300c6482666460370221657476\transformed\lifecycle-runtime-2.7.0 is not up-to-date because:
+  No history is available.
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\c47353865f1070f07551dbef76fbe6dd\transformed\core-ktx-1.17.0 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\4a03af3b665e97e1d51a8444bf3e45b1\transformed\customview-1.0.0 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\4a03af3b665e97e1d51a8444bf3e45b1\transformed\customview-1.0.0 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\5fbf0321ae55ad2880ebe0027ac615f5\transformed\core-1.17.0 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\5fbf0321ae55ad2880ebe0027ac615f5\transformed\core-1.17.0 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\6a4ed815267feeddffda520575242a8c\transformed\annotation-experimental-1.4.1 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\6a4ed815267feeddffda520575242a8c\transformed\annotation-experimental-1.4.1 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\008d1678148c06889688a40ff78476bd\transformed\savedstate-1.2.1 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\008d1678148c06889688a40ff78476bd\transformed\savedstate-1.2.1 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\1ec462a092777036133224604ae1b395\transformed\core-viewtree-1.0.0 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\1ec462a092777036133224604ae1b395\transformed\core-viewtree-1.0.0 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\7fb94d897c9e9c8273e2f25e20ab05e6\transformed\profileinstaller-1.3.1 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\7fb94d897c9e9c8273e2f25e20ab05e6\transformed\profileinstaller-1.3.1 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\2b04165329e88cf9767a9579b498571a\transformed\tracing-1.2.0 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\2b04165329e88cf9767a9579b498571a\transformed\tracing-1.2.0 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\eafe035b0b9b295ab393b5b96460ec99\transformed\startup-runtime-1.1.1 because:
+  Build cache is disabled
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\711735ac19229c940a6efd496ef54e23\transformed\exifinterface-1.4.1 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\711735ac19229c940a6efd496ef54e23\transformed\exifinterface-1.4.1 is not up-to-date because:
+  No history is available.
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\eafe035b0b9b295ab393b5b96460ec99\transformed\startup-runtime-1.1.1 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\59166db072f711a50a6c3f32c8cd08da\transformed\interpolator-1.0.0 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\59166db072f711a50a6c3f32c8cd08da\transformed\interpolator-1.0.0 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\ab274f80fb4d24090e0be9ee5f08ab0c\transformed\versionedparcelable-1.1.1 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\ab274f80fb4d24090e0be9ee5f08ab0c\transformed\versionedparcelable-1.1.1 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\b032d9c16f81dc97149e4375eb5dbbe5\transformed\core-runtime-2.2.0 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\b032d9c16f81dc97149e4375eb5dbbe5\transformed\core-runtime-2.2.0 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\28d2b659f008bb2edcc2cd5f3b2ea8c2\transformed\core-1.0.0 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\28d2b659f008bb2edcc2cd5f3b2ea8c2\transformed\core-1.0.0 is not up-to-date because:
+  No history is available.
+Caching disabled for AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\2ed74eb25bc925a4b94b349595d724cb\transformed\relinker-1.4.5 because:
+  Build cache is disabled
+AarTransform: C:\Users\Kutbay\.gradle\caches\transforms-3\2ed74eb25bc925a4b94b349595d724cb\transformed\relinker-1.4.5 is not up-to-date because:
+  No history is available.
+Caching disabled for task ':app:mergeDebugAssets' because:
+  Build cache is disabled
+Task ':app:mergeDebugAssets' is not up-to-date because:
+  No history is available.
+The input changes require a full rebuild for incremental task ':app:mergeDebugAssets'.
+Could not execute [report metric STATISTICS_COLLECT_METRICS_OVERHEAD]
+Could not execute [report metric STATISTICS_COLLECT_METRICS_OVERHEAD]
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:checkDebugAarMetadata'.
+> A failure occurred while executing com.android.build.gradle.internal.tasks.CheckAarMetadataWorkAction
+   > 6 issues were found when checking AAR metadata:
+     
+       1.  Dependency 'androidx.browser:browser:1.9.0' requires libraries and applications that
+           depend on it to compile against version 36 or later of the
+           Android APIs.
+     
+           :app is currently compiled against android-34.
+     
+           Also, the maximum recommended compile SDK version for Android Gradle
+           plugin 8.3.2 is 34.
+     
+           Recommended action: Update this project's version of the Android Gradle
+           plugin to one that supports 36, then update this project to use
+           compileSdk of at least 36.
+     
+           Note that updating a library or application's compileSdk (which
+           allows newer APIs to be used) can be done separately from updating
+           targetSdk (which opts the app in to new runtime behavior) and
+           minSdk (which determines which devices the app can be installed
+           on).
+     
+       2.  Dependency 'androidx.browser:browser:1.9.0' requires Android Gradle plugin 8.9.1 or higher.
+     
+           This build currently uses Android Gradle plugin 8.3.2.
+     
+       3.  Dependency 'androidx.core:core-ktx:1.17.0' requires libraries and applications that
+           depend on it to compile against version 36 or later of the
+           Android APIs.
+     
+           :app is currently compiled against android-34.
+     
+           Also, the maximum recommended compile SDK version for Android Gradle
+           plugin 8.3.2 is 34.
+     
+           Recommended action: Update this project's version of the Android Gradle
+           plugin to one that supports 36, then update this project to use
+           compileSdk of at least 36.
+     
+           Note that updating a library or application's compileSdk (which
+           allows newer APIs to be used) can be done separately from updating
+           targetSdk (which opts the app in to new runtime behavior) and
+           minSdk (which determines which devices the app can be installed
+           on).
+     
+       4.  Dependency 'androidx.core:core-ktx:1.17.0' requires Android Gradle plugin 8.9.1 or higher.
+     
+           This build currently uses Android Gradle plugin 8.3.2.
+     
+       5.  Dependency 'androidx.core:core:1.17.0' requires libraries and applications that
+           depend on it to compile against version 36 or later of the
+           Android APIs.
+     
+           :app is currently compiled against android-34.
+     
+           Also, the maximum recommended compile SDK version for Android Gradle
+           plugin 8.3.2 is 34.
+     
+           Recommended action: Update this project's version of the Android Gradle
+           plugin to one that supports 36, then update this project to use
+           compileSdk of at least 36.
+     
+           Note that updating a library or application's compileSdk (which
+           allows newer APIs to be used) can be done separately from updating
+           targetSdk (which opts the app in to new runtime behavior) and
+           minSdk (which determines which devices the app can be installed
+           on).
+     
+       6.  Dependency 'androidx.core:core:1.17.0' requires Android Gradle plugin 8.9.1 or higher.
+     
+           This build currently uses Android Gradle plugin 8.3.2.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUÝLD FAILED in 1m
+22 actionable tasks: 11 executed, 11 up-to-date
+Watched directory hierarchies: [C:\Users\Kutbay\flutter\packages\flutter_tools\gradle]

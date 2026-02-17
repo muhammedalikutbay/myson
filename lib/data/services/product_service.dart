@@ -1,47 +1,29 @@
+import 'dart:convert';
+import 'package:flutter/services.dart';
 import 'package:myson/data/models/product.dart';
 
 class ProductService {
-  static final List<Map<String, dynamic>> _rawData = _generateMockData();
+  static List<Map<String, dynamic>> _rawData = [];
 
-  static List<Map<String, dynamic>> _generateMockData() {
-    final List<Map<String, dynamic>> data = [];
-    final categories = ['Vacuums', 'Hair Care', 'Air Quality'];
-    final categoryDetails = {
-      'Vacuums': {
-        'name': 'Myson V',
-        'price': 749.99,
-        'img': 'https://wantapi.com/assets/banner.png',
-      },
-      'Hair Care': {
-        'name': 'Myson Supersonic ',
-        'price': 429.99,
-        'img': 'https://wantapi.com/assets/hair_dryer.png',
-      },
-      'Air Quality': {
-        'name': 'Myson Purifier ',
-        'price': 649.99,
-        'img': 'https://wantapi.com/assets/purifier.png',
-      },
-    };
-
-    for (var cat in categories) {
-      final details = categoryDetails[cat]!;
-      for (var i = 1; i <= 12; i++) {
-        data.add({
-          'id': '${cat.toLowerCase().replaceAll(' ', '-')}-$i',
-          'name': '${details['name']}$i™',
-          'description':
-              'Premium ${cat.toLowerCase()} technology by Myson. Model $i.',
-          'price': (details['price'] as double) + (i * 10),
-          'imageUrl': details['img'],
-          'category': cat,
-        });
-      }
+  static Future<void> init() async {
+    if (_rawData.isNotEmpty) return;
+    try {
+      final String response = await rootBundle.loadString(
+        'assets/data/products.json',
+      );
+      final List<dynamic> data = json.decode(response);
+      _rawData = data.cast<Map<String, dynamic>>();
+    } catch (e) {
+      // Fallback or empty list
+      _rawData = [];
     }
-    return data;
   }
 
-  static List<Product> getProducts({String? query, String? category}) {
+  static Future<List<Product>> getProducts({
+    String? query,
+    String? category,
+  }) async {
+    await init();
     Iterable<Map<String, dynamic>> data = _rawData;
 
     if (category != null && category != 'All Products') {

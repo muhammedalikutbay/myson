@@ -201,7 +201,7 @@ class _DailyDealBanner extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Center(
-                child: Image.network(product.imageUrl, fit: BoxFit.contain),
+                child: Image.asset(product.imageUrl, fit: BoxFit.contain),
               ),
             ),
           ),
@@ -241,10 +241,7 @@ class _DiscoveryProductCard extends StatelessWidget {
                   Center(
                     child: Padding(
                       padding: const EdgeInsets.all(20.0),
-                      child: Image.network(
-                        product.imageUrl,
-                        fit: BoxFit.contain,
-                      ),
+                      child: Image.asset(product.imageUrl, fit: BoxFit.contain),
                     ),
                   ),
                   if (product.badgeText != null)

@@ -16,9 +16,14 @@ class CatalogHeroBanner extends StatelessWidget {
           child: Stack(
             children: [
               Positioned.fill(
-                child: Image.network(
-                  'https://wantapi.com/assets/banner.png',
-                  fit: BoxFit.cover,
+                child: Container(
+                  decoration: const BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [Color(0xFF1a1a2e), Color(0xFF16213e)],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                  ),
                 ),
               ),
               Container(

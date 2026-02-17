@@ -106,7 +106,7 @@ class _BagItemCard extends StatelessWidget {
               color: AppColors.secondaryBackground,
               shape: BoxShape.circle,
             ),
-            child: Image.network(item.product.imageUrl, fit: BoxFit.contain),
+            child: Image.asset(item.product.imageUrl, fit: BoxFit.contain),
           ),
           const SizedBox(width: 16),
           // Product Details
