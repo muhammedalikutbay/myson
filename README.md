@@ -1,36 +1,30 @@
-# Myson - Premium Tech Store
+# Myson - Mini Katalog Uygulaması
+## Software Persone 11. Dönem Stajı - Proje Çıktısı Raporu
 
-A premium Flutter mobile application inspired by the sleek and modern aesthetic of high-end consumer technology.
+Bu proje, Software Persone 11. Dönem Stajı kapsamında öğrencilerin Flutter kullanarak temel seviyede bir mobil uygulama geliştirme sürecini öğrenmeleri amacıyla geliştirilmiştir.
 
-## Overview
+## 1. Projenin Amacı ve Genel Tanımı
+Eğitim kapsamında geliştirilen "Mini Katalog Uygulaması", basit fakat profesyonel bir uygulama taslağıdır. Bu proje; widget yapısı, sayfa geçişleri, temel UI tasarımı, veri modeli oluşturma ve proje klasörleme mantığını öğretmeyi hedefler.
 
-Myson is a concept store application featuring cutting-edge home and personal care products. The app prioritizes visual excellence, smooth performance, and a user-centric shopping experience.
+## 2. Kullanılacak Araçlar ve Geliştirme Ortamı
+Proje geliştirme sürecinde aşağıdaki araçlar kullanılmıştır:
+- **Geliştirme Araçları:** Flutter SDK, Dart SDK, Visual Studio Code, Android Studio (Emulator).
+- **Paketler:** `material.dart` (Temel eğitim kapsamı gereği ekstra paket kullanımı minimize edilmiştir).
 
-## Key Features
+## 3. Eğitim İçeriği ve Öğrenme Hedefleri
+- **Gün 1:** Flutter mimarisi, proje yapısı ve Stateless/Stateful widget mantığı.
+- **Gün 2:** Dart temelleri, koleksiyon yapıları ve temel UI widget'ları (Row, Column, Container vb.).
+- **Gün 3:** Navigator, Route kavramı ve sayfalar arası veri taşıma.
+- **Gün 4:** JSON mantığı, Model sınıfları ve `ListView.builder` ile dinamik listeleme.
+- **Gün 5:** Ürün listesi, GridView kullanımı, ürün detayı sayfası ve sepet simülasyonu.
 
-- **Product Discovery**: Browse a curated catalog of premium products.
-- **Dynamic Categories**: Effortlessly navigate through Vacuums, Hair Care, and Air Quality solutions.
-- **Glassmorphic Navigation**: Modern and interactive navigation bar.
-- **Seamless Cart System**: Add to bag and manage selections with ease.
-- **Adaptive UI**: Optimized layouts to prevent overflow and ensure visual consistency.
+## 4. Proje Aşamaları
+1. **Kurulum:** Geliştirme ortamının hazırlanması ve ilk widget yapısının kurulması.
+2. **UI Tasarımı:** Kart yapısı, ikonlar ve görsel düzenlemeler.
+3. **Navigasyon:** Sayfalar arası geçiş ve argüman taşıma mantığı.
+4. **Veri Modelleme:** JSON simülasyonundan veri okunması ve dinamik listeleme.
+5. **Final Uygulama:** Ana sayfa, ürün listesi ve detay ekranlarının birleştirilmesi.
 
-## Technical Improvements (Phase 5)
-
-### 🛠 Build System & Infrastructure
-- **SDK Optimization**: Upgraded to `compileSdk 36` to support the latest Android APIs.
-- **Gradle Refresh**: Updated Android Gradle Plugin to `8.9.1` and Gradle wrapper to `8.11.1`.
-- **Kotlin Update**: Bumped Kotlin version to `2.1.0` for enhanced compatibility.
-
-### 🎨 UI & UX Refinement
-- **Overflow Resolution**: Fixed layout issues in `ProductCard` (bottom overflow) by optimizing padding and typography.
-- **Asset Migration**: Migrated product images to local assets to bypass 403 CDN errors, ensuring consistent loading.
-- **Image Presentation**: Switched to `BoxFit.cover` in product cards for better visual integration.
-
-## Getting Started
-
-1. Clone the repository.
-2. Run `flutter pub get` to install dependencies.
-3. Use `flutter run` to launch the application.
 
 ---
-*Built with ❤️ using Flutter*
+*Bu proje Software Persone 11. Dönem Stajı final çıktısı olarak hazırlanmıştır.*
